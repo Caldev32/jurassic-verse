@@ -1,0 +1,24 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+#nav-bar{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #3e3530;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.nav-item{
+    
+    display: block;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+}
