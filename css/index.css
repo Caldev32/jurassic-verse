@@ -3,24 +3,30 @@
     margin: 0;
     box-sizing: border-box;
 }
+/* ajuste do botão  */
+#menu-button img{
+    height: 10px;
+}
+/* ajusta o offcanvas */
+#logo-fossil{
+    height:60px
+}
+.nav-item{
+    text-decoration: none;
+    color: aliceblue;
+    size: 30px;
+    padding-left: 10px;
 
-#nav-bar{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #3e3530;
+}
+#nav-container{
+    list-style:none;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    gap: 30px;
     
 }
 
-.nav-item{
-    
-    display: block;
-    text-decoration: none;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
+
+footer{
+    margin: 40px;
 }
