@@ -1,158 +1,230 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+    <!-- Configurações básicas da página -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jurassic Park - Galeria</title>
+
+    <!-- CSS da página -->
     <link rel="stylesheet" href="../css/galeria.css">
+
+    <!-- Ícones Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <!-- Fontes Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Skranji:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Fjalla+One&family=Vina+Sans&display=swap" rel="stylesheet">
 </head>
+
 <body>
+
+    <!-- Cabeçalho da página -->
     <header>
-        <img src="../img/logo.png" alt="">
+        <img src="../img/logo.png" loading="lazy" alt="Logo Jurassic Fan">
+
+        <!-- Ícone do menu mobile -->
         <i class="bi bi-list" onclick="clickMenu()"></i>
+
+        <!-- Menu de navegação -->
         <nav id="menu">
             <ul id="nav-bar">
-                <li ><a href="../index.html" class="nav-item">Menu Inicial</a></li>
-                <li ><a href="./linhadotempo.html" class="nav-item">Linha do tempo</a></li>
-                <li ><a href="./html/did.html"class="nav-item">"Did you know?"</a></li>
-                <li ><a href="./iconicos.html"class="nav-item">Dinossauros Iconicos</a></li>
-                <li ><a href="./sobre.html" class="nav-item">Sobre nós</a></li>
-                <li ><a href="./sugestoes.html"class="nav-item">Sugestões</a></li>
+                <li><a href="../index.html" class="nav-item">Menu Inicial</a></li>
+                <li><a href="./linhadotempo.html" class="nav-item">Linha do tempo</a></li>
+                <li><a href="./html/did.html" class="nav-item">"Did you know?"</a></li>
+                <li><a href="./iconicos.html" class="nav-item">Dinossauros Iconicos</a></li>
+                <li><a href="./sobre.html" class="nav-item">Sobre nós</a></li>
+                <li><a href="./sugestoes.html" class="nav-item">Sugestões</a></li>
             </ul>
         </nav>
     </header>
+
+    <!-- Conteúdo principal -->
     <main>
+
+        <!-- Banner da galeria -->
         <section class="banner-galeria">
             <h1>GALERIA</h1>
         </section>
 
-        <h2>Dinossauros</h2>
+        <!-- Seção de dinossauros -->
+        <h2>
+            <img src="../img/fossil.png" loading="lazy" alt="">
+            Dinossauros
+        </h2>
+
         <section id="dinossauros">
 
             <article class="card">
-                <img src="../img/galeria/t-rex.png" alt="T-Rex">
+                <img src="../img/galeria/t-rex.webp" loading="lazy" alt="T-Rex">
                 <h3>Tyrannosaurus Rex</h3>
                 <p>O dinossauro mais famoso da franquia.</p>
             </article>
 
             <article class="card">
-                <img src="../img/galeria/velociraptor.png" alt="Velociraptor Blue">
+                <img src="../img/galeria/velociraptor.webp" loading="lazy" alt="Velociraptor Blue">
                 <h3>Velociraptor Blue</h3>
                 <p>A mais inteligente dos raptores treinados por Owen.</p>
             </article>
 
             <article class="card">
-                <img src="../img/galeria/brachiossauro.png" alt="Brachiossauro">
+                <img src="../img/galeria/brachiossauro.webp" loading="lazy" alt="Brachiossauro">
                 <h3>Brachiossauro</h3>
                 <p>Um dos herbívoros mais icônicos da franquia.</p>
             </article>
 
             <article class="card">
-                <img src="../img/galeria/indominus.jpg" alt="Indominus Rex">
+                <img src="../img/galeria/indominus.webp" loading="lazy" alt="Indominus Rex">
                 <h3>Indominus Rex</h3>
                 <p>Dinossauro híbrido criado em laboratório.</p>
             </article>
 
         </section>
 
-        <h2>Veículos</h2>
+        <!-- Seção de veículos -->
+        <h2>
+            <i class="bi bi-car-front-fill"></i>
+            Veículos
+        </h2>
+
         <section id="veiculos">
 
             <article class="card">
-                <img src="../img/galeria/explorer.png" alt="Ford Explorer">
+                <img src="../img/galeria/explorer.webp" loading="lazy" alt="Ford Explorer">
                 <h3>Ford Explorer</h3>
                 <p>Veículo utilizado no passeio do parque.</p>
             </article>
 
             <article class="card">
-                <img src="../img/galeria/jeep.png" alt="Jeep Wrangler">
+                <img src="../img/galeria/jeep.webp" loading="lazy" alt="Jeep Wrangler">
                 <h3>Jeep Wrangler</h3>
                 <p>Veículo utilizado para exploração da ilha.</p>
             </article>
 
             <article class="card">
-                <img src="../img/galeria/girosfera.jpg" alt="Girosfera">
+                <img src="../img/galeria/girosfera.webp" loading="lazy" alt="Girosfera">
                 <h3>Girosfera</h3>
                 <p>Atração interativa do Jurassic World.</p>
             </article>
+
         </section>
 
-        <h2>Locais</h2>
+        <!-- Seção de locais -->
+        <h2>
+            <i class="bi bi-geo-alt-fill"></i>
+            Locais
+        </h2>
+
         <section id="locais">
 
             <article class="card">
-                <img src="../img/galeria/entrada.png" alt="Portão do Parque">
+                <img src="../img/galeria/entrada.webp" loading="lazy" alt="Portão do Parque">
                 <h3>Portão do Parque</h3>
                 <p>A entrada mais famosa da franquia.</p>
             </article>
 
             <article class="card">
-                <img src="../img/galeria/centro-visitantes.jpg" alt="Centro de Visitantes">
+                <img src="../img/galeria/centro-visitantes.webp" loading="lazy" alt="Centro de Visitantes">
                 <h3>Centro de Visitantes</h3>
                 <p>Principal atração do parque original.</p>
             </article>
 
             <article class="card">
-                <img src="../img/galeria/ilha.png" alt="Ilha Nublar">
+                <img src="../img/galeria/ilha.webp" loading="lazy" alt="Ilha Nublar">
                 <h3>Ilha Nublar</h3>
                 <p>Localização do Jurassic Park e Jurassic World.</p>
             </article>
 
         </section>
 
+        <!-- Seção de personagens -->
+        <h2>
+            <i class="bi bi-person-fill"></i>
+            Personagens
+        </h2>
 
-        <h2>Personagens</h2>
         <section id="personagens">
 
             <article class="card">
-                <img src="../img/galeria/hammond.jpg" alt="John Hammond">
+                <img src="../img/galeria/hammond.webp" loading="lazy" alt="John Hammond">
                 <h3>John Hammond</h3>
                 <p>Criador do Jurassic Park.</p>
             </article>
 
             <article class="card">
-                <img src="../img/galeria/alan-grant.jpg" alt="Alan Grant">
+                <img src="../img/galeria/alan-grant.webp" loading="lazy" alt="Alan Grant">
                 <h3>Alan Grant</h3>
                 <p>Paleontólogo protagonista de Jurassic Park (1993).</p>
             </article>
 
             <article class="card">
-                <img src="../img/galeria/ellie.jpg" alt="Ellie Sattler">
+                <img src="../img/galeria/ellie.webp" loading="lazy" alt="Ellie Sattler">
                 <h3>Ellie Sattler</h3>
                 <p>Paleobotânica que ajudou a desvendar os mistérios do Jurassic Park.</p>
             </article>
 
             <article class="card">
-                <img src="../img/galeria/ian-malcolm.jpg" alt="Ian Malcolm">
+                <img src="../img/galeria/ian-malcolm.webp" loading="lazy" alt="Ian Malcolm">
                 <h3>Ian Malcolm</h3>
                 <p>Matemático conhecido pela Teoria do Caos.</p>
             </article>
 
             <article class="card">
-                <img src="../img/galeria/sarah.jpg" alt="Sarah Harding">
+                <img src="../img/galeria/sarah.webp" loading="lazy" alt="Sarah Harding">
                 <h3>Sarah Harding</h3>
                 <p>Pesquisadora presente em The Lost World.</p>
             </article>
 
             <article class="card">
-                <img src="../img/galeria/owen.jpg" alt="Owen Grady">
+                <img src="../img/galeria/owen.webp" loading="lazy" alt="Owen Grady">
                 <h3>Owen Grady</h3>
                 <p>Treinador dos velociraptores em Jurassic World.</p>
             </article>
 
             <article class="card">
-                <img src="../img/galeria/claire.jpg" alt="Claire Dearing">
+                <img src="../img/galeria/claire.webp" loading="lazy" alt="Claire Dearing">
                 <h3>Claire Dearing</h3>
                 <p>Gerente operacional do Jurassic World.</p>
             </article>
 
         </section>
-        
+
     </main>
+
+    <!-- Rodapé da página -->
     <footer>
-        
+
+        <h3>Jurassic Fan</h3>
+
+        <p>
+            Projeto acadêmico desenvolvido para a disciplina
+            de Desenvolvimento Web.
+        </p>
+
+        <div class="footer-links">
+
+            <a href="./sobre.html">
+                <i class="bi bi-people-fill"></i>
+                Sobre nós
+            </a>
+
+            <a href="./sugestoes.html">
+                <i class="bi bi-lightbulb-fill"></i>
+                Sugestões
+            </a>
+
+        </div>
+
+        <p class="copyright">
+            © 2026 Jurassic Fan
+        </p>
+
     </footer>
+
+    <!-- Script do menu mobile -->
     <script>
         function clickMenu() {
             if (menu.style.display == 'block') {
@@ -163,5 +235,6 @@
             }
         }
     </script>
+
 </body>
 </html>
