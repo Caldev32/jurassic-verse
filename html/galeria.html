@@ -4,98 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jurassic Park - Galeria</title>
-    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="../css/galeria.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    <style>
-
-        :root {
-            --cor-header: #050505;
-            --cor-card: #121212;
-            --cor-verde: #6B8E23;
-            --cor-vermelho: #C0392B;
-            --cor-texto: #F5F5F5;
-
-            --fonte-titulo: 'Anton', sans-serif;
-            --fonte-texto: 'Poppins', sans-serif;
-        }
-        * {
-            padding: 0;
-            margin: 0;
-            box-sizing: border-box;
-        }
-
-        html, body {
-            height: 100vh;
-        }
-
-        header {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            background-color: black;
-        }
-
-        header img {
-            margin: 20px;
-            width: 150px;
-        }
-
-        header i {
-            background-color: #191818;
-            color: var(--cor-verde);
-            border-top: 0.5px solid  rgba(255, 255, 255, 0.151);
-            box-shadow: 1px 1px rgba(255, 255, 255, 0.151);
-            width: 100vw;
-            text-align: center;
-            padding: 5px;
-            font-size: 30px;
-        }
-
-        header i:hover {
-            cursor: pointer;
-            background-color: #182204;
-            color: var(--cor-verde);
-        }
-
-        nav {
-            display: none;
-        }
-
-        nav ul li {
-            background-color: #191818;
-            width: 95vw;
-            border: 1px solid black;
-            border-radius: 5px;
-            padding: 10px;
-            margin: 5px;
-            border: 1px solid #6B8E23;
-
-            text-align: center;
-        }
-
-        nav ul li:hover {
-            cursor: pointer;
-            background-color: #182204;
-        }
-
-        nav a {
-            text-decoration: none;
-            color: white;
-        }
-
-        main {
-            min-height: 100vh;
-            background-color: #121212;
-        }
-
-        .banner-galeria {
-            background-image: url('../img/imagem-fundo.png');
-            min-height: 200px;
-            background-size: cover;
-            background-position: center;
-        }
-
-    </style>
 </head>
 <body>
     <header>
@@ -117,19 +27,131 @@
             <h1>GALERIA</h1>
         </section>
 
-        <article class="galeria-card"></article>
-        <article class="galeria-card"></article>
-        <article class="galeria-card"></article>
-        <article class="galeria-card"></article>
-        <article class="galeria-card"></article>
-        <article class="galeria-card"></article>
-        <article class="galeria-card"></article>
-        <article class="galeria-card"></article>
-        <article class="galeria-card"></article>
-        <article class="galeria-card"></article>
+        <h2>Dinossauros</h2>
+        <section id="dinossauros">
+
+            <article class="card">
+                <img src="../img/galeria/t-rex.png" alt="T-Rex">
+                <h3>Tyrannosaurus Rex</h3>
+                <p>O dinossauro mais famoso da franquia.</p>
+            </article>
+
+            <article class="card">
+                <img src="../img/galeria/velociraptor.png" alt="Velociraptor Blue">
+                <h3>Velociraptor Blue</h3>
+                <p>A mais inteligente dos raptores treinados por Owen.</p>
+            </article>
+
+            <article class="card">
+                <img src="../img/galeria/brachiossauro.png" alt="Brachiossauro">
+                <h3>Brachiossauro</h3>
+                <p>Um dos herbívoros mais icônicos da franquia.</p>
+            </article>
+
+            <article class="card">
+                <img src="../img/galeria/indominus.jpg" alt="Indominus Rex">
+                <h3>Indominus Rex</h3>
+                <p>Dinossauro híbrido criado em laboratório.</p>
+            </article>
+
+        </section>
+
+        <h2>Veículos</h2>
+        <section id="veiculos">
+
+            <article class="card">
+                <img src="../img/galeria/explorer.png" alt="Ford Explorer">
+                <h3>Ford Explorer</h3>
+                <p>Veículo utilizado no passeio do parque.</p>
+            </article>
+
+            <article class="card">
+                <img src="../img/galeria/jeep.png" alt="Jeep Wrangler">
+                <h3>Jeep Wrangler</h3>
+                <p>Veículo utilizado para exploração da ilha.</p>
+            </article>
+
+            <article class="card">
+                <img src="../img/galeria/girosfera.jpg" alt="Girosfera">
+                <h3>Girosfera</h3>
+                <p>Atração interativa do Jurassic World.</p>
+            </article>
+        </section>
+
+        <h2>Locais</h2>
+        <section id="locais">
+
+            <article class="card">
+                <img src="../img/galeria/entrada.png" alt="Portão do Parque">
+                <h3>Portão do Parque</h3>
+                <p>A entrada mais famosa da franquia.</p>
+            </article>
+
+            <article class="card">
+                <img src="../img/galeria/centro-visitantes.jpg" alt="Centro de Visitantes">
+                <h3>Centro de Visitantes</h3>
+                <p>Principal atração do parque original.</p>
+            </article>
+
+            <article class="card">
+                <img src="../img/galeria/ilha.png" alt="Ilha Nublar">
+                <h3>Ilha Nublar</h3>
+                <p>Localização do Jurassic Park e Jurassic World.</p>
+            </article>
+
+        </section>
+
+
+        <h2>Personagens</h2>
+        <section id="personagens">
+
+            <article class="card">
+                <img src="../img/galeria/hammond.jpg" alt="John Hammond">
+                <h3>John Hammond</h3>
+                <p>Criador do Jurassic Park.</p>
+            </article>
+
+            <article class="card">
+                <img src="../img/galeria/alan-grant.jpg" alt="Alan Grant">
+                <h3>Alan Grant</h3>
+                <p>Paleontólogo protagonista de Jurassic Park (1993).</p>
+            </article>
+
+            <article class="card">
+                <img src="../img/galeria/ellie.jpg" alt="Ellie Sattler">
+                <h3>Ellie Sattler</h3>
+                <p>Paleobotânica que ajudou a desvendar os mistérios do Jurassic Park.</p>
+            </article>
+
+            <article class="card">
+                <img src="../img/galeria/ian-malcolm.jpg" alt="Ian Malcolm">
+                <h3>Ian Malcolm</h3>
+                <p>Matemático conhecido pela Teoria do Caos.</p>
+            </article>
+
+            <article class="card">
+                <img src="../img/galeria/sarah.jpg" alt="Sarah Harding">
+                <h3>Sarah Harding</h3>
+                <p>Pesquisadora presente em The Lost World.</p>
+            </article>
+
+            <article class="card">
+                <img src="../img/galeria/owen.jpg" alt="Owen Grady">
+                <h3>Owen Grady</h3>
+                <p>Treinador dos velociraptores em Jurassic World.</p>
+            </article>
+
+            <article class="card">
+                <img src="../img/galeria/claire.jpg" alt="Claire Dearing">
+                <h3>Claire Dearing</h3>
+                <p>Gerente operacional do Jurassic World.</p>
+            </article>
+
+        </section>
         
     </main>
     <footer>
+        
     </footer>
     <script>
         function clickMenu() {
