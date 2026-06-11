@@ -108,6 +108,8 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    box-shadow: 0px 15px 30px rgba(107, 142, 35, 0.25);
 }
 
 .banner-galeria h1 {
@@ -118,7 +120,7 @@ main {
 
     margin-top: 150px;
 
-    text-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.293);
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.293);
     border-bottom: 1px solid #6B8E23;
 }
 
