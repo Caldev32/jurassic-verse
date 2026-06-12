@@ -1,0 +1,325 @@
+/* ============================= */
+/* CONFIGURAÇÕES DA PÁGINA */
+/* ============================= */
+
+body {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* ============================= */
+/* INTRODUÇÃO DA PÁGINA */
+/* ============================= */
+
+h1 {
+    color: rgb(208, 195, 195);
+
+    font-family: "Anton", sans-serif;
+    font-size: 60px;
+
+    margin-top: 30px;
+    margin-left: 25px;
+
+    text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.6);
+}
+
+#paragrafo-verde {
+    color: #6B8E23;
+
+    margin-bottom: 10px;
+    margin-left: 25px;
+
+    font-size: 18px;
+}
+
+#descricao {
+    width: 70vw;
+
+    margin-left: 25px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+
+/* ============================= */
+/* FORMULÁRIO */
+/* ============================= */
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset {
+    margin: 10px;
+    border: none;
+}
+
+legend {
+    display: flex;
+    align-items: center;
+
+    color: #6B8E23;
+
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: -1.5px;
+}
+
+legend i {
+    font-size: 25px;
+    margin-right: 8px;
+}
+
+
+/* ============================= */
+/* CAMPOS DO FORMULÁRIO */
+/* ============================= */
+
+.campo {
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 10px;
+}
+
+label {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+#dados-pessoais input,
+#sugestoes select {
+    height: 40px;
+
+    margin-top: 5px;
+    padding: 10px;
+
+    color: gray;
+    background-color: black;
+
+    border: 1px solid rgba(255, 255, 255, 0.382);
+    border-radius: 5px;
+}
+
+#comentario textarea {
+    height: 200px;
+
+    margin-top: 5px;
+    padding: 10px;
+
+    color: gray;
+    background-color: black;
+
+    border: 1px solid rgba(255, 255, 255, 0.382);
+    border-radius: 5px;
+}
+
+
+/* ============================= */
+/* CARDS DO FORMULÁRIO */
+/* ============================= */
+
+#dados-pessoais,
+#sugestoes {
+    width: 90vw;
+
+    margin: auto;
+    margin: 20px;
+    padding: 15px;
+
+    background-color: #181818;
+
+    border: 1px solid #6B8E23;
+    border-radius: 20px;
+
+    box-shadow: inset 0px 1px 10px rgba(255, 255, 255, 0.049);
+}
+
+
+/* ============================= */
+/* AVALIAÇÃO DO SITE */
+/* ============================= */
+
+#avaliacao {
+    display: flex;
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+#avaliacao p {
+    margin-top: 18px;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    align-items: center;
+}
+
+.notas {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nota {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 6px;
+}
+
+.nota input {
+    width: 22px;
+    height: 22px;
+
+    cursor: pointer;
+}
+
+.legenda-avaliacao {
+    display: flex;
+    justify-content: space-between;
+}
+
+.legenda-avaliacao span {
+    color: rgb(206, 197, 197);
+
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+/* ============================= */
+/* CHECKBOX DE TERMOS */
+/* ============================= */
+
+#checkbox-termos {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    margin: 20px;
+}
+
+#checkbox-termos input {
+    width: 20px;
+    height: 20px;
+}
+
+#checkbox-termos label {
+    font-weight: 300;
+}
+
+
+/* ============================= */
+/* BOTÕES DO FORMULÁRIO */
+/* ============================= */
+
+.botoes-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.botoes-form button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 90vw;
+    height: 40px;
+
+    margin: 5px;
+
+    border: none;
+    border-radius: 5px;
+
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.botoes-form #enviar {
+    color: black;
+    background-color: #6B8E23;
+}
+
+.botoes-form #enviar i {
+    color: white;
+
+    font-size: 20px;
+
+    margin-right: 10px;
+}
+
+.botoes-form #limpar {
+    color: #6B8E23;
+    background-color: transparent;
+
+    border: 1px solid #6B8E23;
+}
+
+.botoes-form #limpar i {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+
+/* ============================= */
+/* RESPONSIVIDADE - DESKTOP */
+/* ============================= */
+
+@media (min-width: 700px) {
+
+    /* Centraliza o conteúdo da página */
+    h1,
+    #paragrafo-verde,
+    #descricao {
+        max-width: 800px;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    h1 {
+        font-size: 80px;
+    }
+
+    #paragrafo-verde {
+        font-size: 22px;
+    }
+
+    #descricao {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    /* Limita a largura do formulário no desktop */
+    form {
+        max-width: 800px;
+        margin: 30px auto;
+    }
+
+    #dados-pessoais,
+    #sugestoes {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    /* Deixa os botões lado a lado no desktop */
+    .botoes-form {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .botoes-form button {
+        width: 400px;
+    }
+}
