@@ -60,7 +60,14 @@ nav ul {
     list-style: none;
 }
 
-nav ul li {
+
+ul li{
+    display: flex;
+
+}
+
+/* modificando o link dentro do li pois faz com que toda a caixa seja clicavel */
+.nav-item{
     background-color: #191818;
     width: 90vw;
     padding: 10px;
@@ -70,15 +77,6 @@ nav ul li {
     border-radius: 5px;
 
     text-align: center;
-
-    font-family: "Anton", sans-serif;
-}
-
-nav ul li:hover {
-    background-color: #182204;
-}
-
-nav a {
     text-decoration: none;
     color: white;
 
@@ -86,7 +84,26 @@ nav a {
 
     font-size: 1rem;
     letter-spacing: 1px;
+    font-family: "Anton", sans-serif;
 }
+
+.nav-item:hover {
+    background-color: #182204;
+    color: #6B8E23;
+    cursor: pointer;
+}
+/* css para o item selecionado, como o li(para que toda a caixa seja clicavel) está com display flex, é necesssario um justify content para alinha o conteudo */
+.nav-item-selected {
+        background-color: #191818;
+        width: 90vw;
+        padding: 10px;
+        margin: 10px;
+        border: 1px solid #6B8E23;
+        border-radius: 5px;
+        justify-content: center;
+        font-family: "Anton", sans-serif;
+        color: #6B8E23;
+    }
 
 /* Footer */
 footer {
@@ -94,6 +111,7 @@ footer {
     border-top: 2px solid #6B8E23;
     padding: 40px 20px;
     text-align: center;
+    margin: 0px;
 }
 
 footer h3 {
@@ -158,7 +176,7 @@ footer p {
         list-style: none;
     }
 
-    nav ul li {
+    .nav-item {
         width: auto;
         margin: 0;
         padding: 0;
@@ -166,11 +184,17 @@ footer p {
         background-color: transparent;
     }
 
-    nav ul li:hover {
-        background-color: transparent;
+    .nav-item:hover {
+    background-color: transparent;
+    color: #6B8E23;
     }
-
-    nav a:hover {
+    .nav-item-selected {
+        width: auto;
+        margin: 0;
+        padding: 0;
+        border: none;
+        background-color: transparent;
         color: #6B8E23;
+        font-family: "Anton", sans-serif;
     }
 }

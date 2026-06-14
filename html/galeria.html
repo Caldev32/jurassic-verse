@@ -4,11 +4,14 @@
     <!-- Configurações básicas da página -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jurassic Park - Galeria</title>
+    <title>Jurassic Verse - Galeria</title>
 
     <!-- CSS da página -->
     <link rel="stylesheet" href="../css/galeria.css">
     <link rel="stylesheet" href="../css/global.css">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="../img/logo.webp" type="image/x-icon">
 
     <!-- JavaScript do menu hamburguer da página -->
     <script src="../js/menu.js"></script>
@@ -27,22 +30,25 @@
 
     <!-- Cabeçalho da página -->
     <header>
-        <img src="../img/logo.webp" class="logo" loading="lazy" alt="Logo Jurassic Fan">
+        <a href="../index.html"><img src="../img/logo.webp" class="logo" loading="lazy" alt="Logo Jurassic Fan"></a>
 
         <!-- Ícone do menu mobile -->
         <i class="bi bi-list" onclick="clickMenu()"></i>
 
         <!-- Menu de navegação -->
+        
         <nav id="menu">
             <ul id="nav-bar">
-                <li><a href="../index.html" class="nav-item">Menu Inicial</a></li>
-                <li><a href="./linhadotempo.html" class="nav-item">Linha do tempo</a></li>
+                <li ><a href="../index.html" class="nav-item" >Menu Inicial</a></li>
                 <li><a href="./did.html" class="nav-item">"Did you know?"</a></li>
-                <li><a href="./iconicos.html" class="nav-item">Dinossauros Iconicos</a></li>
-                <li><a href="./sobre.html" class="nav-item">Sobre nós</a></li>
-                <li><a href="./sugestoes.html" class="nav-item">Sugestões</a></li>
+                <li ><a href="./iconicos.html" class="nav-item" >Dinossauros Icônicos</a></li>
+                <li ><a href="./linhadotempo.html" class="nav-item" >Linha do tempo</a></li>
+                <li class="nav-item-selected">Galeria</li>
+                <li ><a href="./sobre.html"  class="nav-item">Sobre nós</a></li>
+                <li ><a href="./sugestoes.html" class="nav-item">Sugestões</a></li>
             </ul>
         </nav>
+    
     </header>
 
     <!-- Conteúdo principal -->
@@ -204,7 +210,7 @@
 
         <p>
             Projeto acadêmico desenvolvido para a disciplina
-            de Desenvolvimento Web.
+            de ARQIDPW.
         </p>
 
         <div class="footer-links">
@@ -222,7 +228,7 @@
         </div>
 
         <p class="copyright">
-            © 2026 Jurassic Verse
+            &copy; 2026 Jurassic Verse
         </p>
 
     </footer>
