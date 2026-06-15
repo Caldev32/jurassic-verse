@@ -94,6 +94,8 @@ ul li{
 }
 /* css para o item selecionado, como o li(para que toda a caixa seja clicavel) está com display flex, é necesssario um justify content para alinha o conteudo */
 .nav-item-selected {
+        text-align: center;
+        text-decoration: none;
         background-color: #191818;
         width: 90vw;
         padding: 10px;
@@ -124,22 +126,6 @@ footer p {
     color: #BDBDBD;
     font-family: Arial, Helvetica, sans-serif;
     margin-bottom: 20px;
-}
-
-.footer-links {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    margin-bottom: 20px;
-}
-
-.footer-links a {
-    color: #6B8E23;
-    text-decoration: none;
-}
-
-.footer-links a:hover {
-    color: #8fbf2f;
 }
 
 .copyright {
@@ -189,6 +175,7 @@ footer p {
     color: #6B8E23;
     }
     .nav-item-selected {
+        text-decoration: none;
         width: auto;
         margin: 0;
         padding: 0;
