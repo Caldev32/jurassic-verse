@@ -1,0 +1,199 @@
+body {
+    color: white;
+    background-color: #0f0f0f;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+/* INTRODUÇÃO */
+h1 {
+    color: rgb(208, 195, 195);
+    font-family: "Anton", sans-serif;
+    font-size: 60px;
+    margin-top: 30px;
+    margin-left: 25px;
+    text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.6);
+}
+
+#paragrafo-verde {
+    color: #6B8E23;
+    margin-bottom: 10px;
+    margin-left: 25px;
+    font-size: 18px;
+}
+
+#descricao {
+    width: 70vw;
+    margin-left: 25px;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* TABELA */
+#tabela-dinossauros {
+    width: 90vw;
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 20px 0;
+}
+
+.tabela-wrapper {
+    background-color: #181818;
+    border: 1px solid #6B8E23;
+    border-radius: 20px;
+    box-shadow: inset 0px 1px 10px rgba(255, 255, 255, 0.049);
+    padding: 10px;
+}
+
+.tabela-iconicos {
+    margin-bottom: 0;
+    --bs-table-bg: transparent;
+    --bs-table-color: white;
+    --bs-table-striped-bg: rgba(255, 255, 255, 0.03);
+    --bs-table-hover-bg: rgba(107, 142, 35, 0.10);
+    --bs-table-border-color: rgba(255, 255, 255, 0.08);
+    min-width: 1200px;
+}
+
+.tabela-iconicos caption {
+    color: rgb(206, 197, 197);
+    caption-side: top;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.tabela-iconicos thead th {
+    background-color: #111111 !important;
+    color: #6B8E23 !important;
+    border-bottom: 1px solid #6B8E23 !important;
+    font-family: "Anton", sans-serif;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    padding: 18px 16px;
+    vertical-align: middle;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+.tabela-iconicos tbody th,
+.tabela-iconicos tbody td {
+    padding: 18px 16px;
+    vertical-align: middle;
+    color: rgb(206, 197, 197);
+    font-size: 14px;
+    line-height: 1.7;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.tabela-iconicos tbody th[scope="row"] {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.tabela-iconicos tbody tr.modificado {
+    background-color: rgba(107, 142, 35, 0.06);
+}
+
+.dino-media {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.dino-img {
+    width: 180px;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    display: block;
+}
+
+
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+    h1,
+    #paragrafo-verde,
+    #descricao {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    #descricao {
+        width: auto;
+    }
+
+    #tabela-dinossauros {
+        width: calc(100vw - 30px);
+        margin: 30px auto;
+    }
+
+    .tabela-wrapper {
+        padding: 8px;
+        border-radius: 16px;
+    }
+
+    .tabela-iconicos thead th {
+        font-size: 16px;
+        padding: 14px 12px;
+    }
+
+    .tabela-iconicos tbody th,
+    .tabela-iconicos tbody td {
+        font-size: 13px;
+        padding: 14px 12px;
+    }
+
+    .tabela-iconicos tbody th[scope="row"] {
+        font-size: 16px;
+    }
+
+    .dino-img {
+        width: 140px;
+        height: 90px;
+    }
+
+    .dino-media figcaption {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 700px) {
+    h1,
+    #paragrafo-verde,
+    #descricao {
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    h1 {
+        font-size: 80px;
+    }
+
+    #paragrafo-verde {
+        font-size: 22px;
+    }
+
+    #descricao {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .tabela-iconicos caption {
+        font-size: 16px;
+    }
+
+    .tabela-iconicos tbody th,
+    .tabela-iconicos tbody td {
+        font-size: 15px;
+    }
+}
