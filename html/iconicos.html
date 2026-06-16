@@ -1,55 +1,43 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <!-- Configurações básicas da página -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jurassic Verse - Dinossauros Icônicos</title>
 
-    <!-- CSS da página -->
-    <link rel="stylesheet" href="../css/iconicos.css">
     <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/iconicos.css">
 
-    <!-- favicon -->
     <link rel="shortcut icon" href="../img/logo.webp" type="image/x-icon">
 
-    <!-- JavaScript do menu hamburguer da página -->
-    <script src="../js/menu.js"></script>
-
-    <!-- Ícones Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
-    <!-- Fontes Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Fjalla+One&family=Skranji:wght@400;700&family=Vina+Sans&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
-    <!-- Cabeçalho da página -->
     <header>
-        <a href="../index.html"><img src="../img/logo.webp" class="logo" loading="lazy" alt="Logo Jurassic Fan"></a>
+        <a href="../index.html">
+            <img src="../img/logo.webp" class="logo" loading="lazy" alt="Logo Jurassic Fan">
+        </a>
 
-        <!-- Ícone do menu mobile -->
         <i class="bi bi-list" onclick="clickMenu()"></i>
 
-        <!-- Menu de navegação -->
         <nav id="menu">
             <ul id="nav-bar">
-                <li><a href="../index.html" class="nav-item" >Home</a></li>
-                <li><a href="./did.html" class="nav-item">"Did you know?"</a></li>
-                <li class="nav-item-selected" >Dinossauros Icônicos</li>
-                <li><a href="./linhadotempo.html" class="nav-item" >Linha do tempo</a></li>
+                <li><a href="../index.html" class="nav-item">Home</a></li>
+                <li><a href="./did.html" class="nav-item">Did you know?</a></li>
+                <li class="nav-item-selected">Dinossauros Icônicos</li>
+                <li><a href="./linhadotempo.html" class="nav-item">Linha do tempo</a></li>
                 <li><a href="./galeria.html" class="nav-item">Galeria</a></li>
-                <li><a href="./sobre.html"  class="nav-item">Sobre nós</a></li>
+                <li><a href="./sobre.html" class="nav-item">Sobre nós</a></li>
                 <li><a href="./sugestoes.html" class="nav-item">Sugestões</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Conteúdo principal -->
     <main>
         <h1>DINOSSAUROS ICÔNICOS</h1>
 
@@ -62,8 +50,8 @@
         </p>
 
         <section id="tabela-dinossauros">
-            <div class="table-responsive tabela-wrapper">
-                <table class="table table-dark table-borderless align-middle tabela-iconicos">
+            <div class="tabela-wrapper">
+                <table class="tabela-iconicos">
                     <caption>
                         Dinossauros icônicos da franquia Jurassic, incluindo espécies clássicas, aquáticas, voadoras e modificadas geneticamente.
                     </caption>
@@ -80,65 +68,64 @@
                     <tbody>
                         <tr>
                             <th scope="row">T-Rex</th>
-                            <td> Tyrannosaurus rex</td>
-                            <td>Jurassic Park, The Lost World, Jurassic Park III, Jurassic World, Reino Ameaçado, Domínio</td>
-                            <td>
+                            <td data-label="Espécie">Tyrannosaurus rex</td>
+                            <td data-label="Filmes em que apareceu">Jurassic Park, The Lost World, Jurassic Park III, Jurassic World, Reino Ameaçado, Domínio</td>
+                            <td data-label="Foto">
                                 <figure class="dino-media">
-                                    <img src="../img/Iconicos/t-rex.webp" alt="T-Rex" class="dino-img">
+                                    <img src="../img/iconicos/t-rex.webp" alt="T-Rex" class="dino-img">
                                 </figure>
                             </td>
                         </tr>
 
                         <tr>
                             <th scope="row">Blue</th>
-                            <td>Velociraptor</td>
-                            <td>Jurassic World, Reino Ameaçado, Domínio</td>
-                            <td>
+                            <td data-label="Espécie">Velociraptor</td>
+                            <td data-label="Filmes em que apareceu">Jurassic World, Reino Ameaçado, Domínio</td>
+                            <td data-label="Foto">
                                 <figure class="dino-media">
-                                    <img src="../img/iconicos/blue.webp" alt="Velociraptor Blue" class="dino-img">
+                                    <img src="../img/iconicos/blue.webp" alt="Blue" class="dino-img">
                                 </figure>
                             </td>
                         </tr>
 
                         <tr>
                             <th scope="row">Charlie</th>
-                            <td>Velociraptor</td>
-                            <td>Jurassic World, Reino Ameaçado</td>
-                            <td>
+                            <td data-label="Espécie">Velociraptor</td>
+                            <td data-label="Filmes em que apareceu">Jurassic World</td>
+                            <td data-label="Foto">
                                 <figure class="dino-media">
-                                    <img src="../img/iconicos/charlie.webp" alt="Velociraptor Charlie" class="dino-img">
+                                    <img src="../img/iconicos/charlie.webp" alt="Charlie" class="dino-img">
                                 </figure>
                             </td>
                         </tr>
-                        
+
                         <tr>
                             <th scope="row">Echo</th>
-                            <td>Velociraptor</td>
-                            <td>Jurassic World, Reino Ameaçado</td>
-                            <td>
+                            <td data-label="Espécie">Velociraptor</td>
+                            <td data-label="Filmes em que apareceu">Jurassic World</td>
+                            <td data-label="Foto">
                                 <figure class="dino-media">
-                                    <img src="../img/iconicos/echo.webp" alt="Velociraptor Echo" class="dino-img">
+                                    <img src="../img/iconicos/echo.webp" alt="Echo" class="dino-img">
                                 </figure>
                             </td>
                         </tr>
 
                         <tr>
                             <th scope="row">Delta</th>
-                            <td>Velociraptor</td>
-                            <td>Jurassic World, Reino Ameaçado</td>
-                            <td>
+                            <td data-label="Espécie">Velociraptor</td>
+                            <td data-label="Filmes em que apareceu">Jurassic World</td>
+                            <td data-label="Foto">
                                 <figure class="dino-media">
-                                    <img src="../img/iconicos/delta.webp" alt="Velociraptor Delta" class="dino-img">
+                                    <img src="../img/iconicos/delta.webp" alt="Delta" class="dino-img">
                                 </figure>
                             </td>
                         </tr>
 
-
                         <tr>
                             <th scope="row">Estegossauro</th>
-                            <td>Stegosaurus</td>
-                            <td>The Lost World, Jurassic World, Reino Ameaçado</td>
-                            <td>
+                            <td data-label="Espécie">Stegosaurus</td>
+                            <td data-label="Filmes em que apareceu">The Lost World, Jurassic World, Reino Ameaçado</td>
+                            <td data-label="Foto">
                                 <figure class="dino-media">
                                     <img src="../img/iconicos/estegossauro.webp" alt="Estegossauro" class="dino-img">
                                 </figure>
@@ -147,9 +134,9 @@
 
                         <tr>
                             <th scope="row">Paquicefalossauro</th>
-                            <td>Pachycephalosaurus</td>
-                            <td>The Lost World, Jurassic World</td>
-                            <td>
+                            <td data-label="Espécie">Pachycephalosaurus</td>
+                            <td data-label="Filmes em que apareceu">The Lost World, Jurassic World</td>
+                            <td data-label="Foto">
                                 <figure class="dino-media">
                                     <img src="../img/iconicos/paquicefalossauro.webp" alt="Paquicefalossauro" class="dino-img">
                                 </figure>
@@ -158,9 +145,9 @@
 
                         <tr>
                             <th scope="row">Dilofossauro</th>
-                            <td>Dilophosaurus</td>
-                            <td>Jurássico Inferior</td>
-                            <td>
+                            <td data-label="Espécie">Dilophosaurus</td>
+                            <td data-label="Filmes em que apareceu">Jurassic Park, Domínio</td>
+                            <td data-label="Foto">
                                 <figure class="dino-media">
                                     <img src="../img/iconicos/dilofossauro.webp" alt="Dilofossauro" class="dino-img">
                                 </figure>
@@ -169,9 +156,9 @@
 
                         <tr>
                             <th scope="row">Barionix</th>
-                            <td>Baryonyx</td>
-                            <td>Reino Ameaçado</td>
-                            <td>
+                            <td data-label="Espécie">Baryonyx</td>
+                            <td data-label="Filmes em que apareceu">Reino Ameaçado</td>
+                            <td data-label="Foto">
                                 <figure class="dino-media">
                                     <img src="../img/iconicos/barionix.webp" alt="Barionix" class="dino-img">
                                 </figure>
@@ -180,9 +167,9 @@
 
                         <tr>
                             <th scope="row">Braquiossauro</th>
-                            <td>Brachiosaurus</td>
-                            <td>Jurassic Park, Jurassic World, Reino Ameaçado</td>
-                            <td>
+                            <td data-label="Espécie">Brachiosaurus</td>
+                            <td data-label="Filmes em que apareceu">Jurassic Park, Jurassic World, Reino Ameaçado</td>
+                            <td data-label="Foto">
                                 <figure class="dino-media">
                                     <img src="../img/iconicos/braquiossauro.webp" alt="Braquiossauro" class="dino-img">
                                 </figure>
@@ -191,9 +178,9 @@
 
                         <tr>
                             <th scope="row">Espinossauro</th>
-                            <td>Spinosaurus</td>
-                            <td>Cretáceo Superior</td>
-                            <td>
+                            <td data-label="Espécie">Spinosaurus</td>
+                            <td data-label="Filmes em que apareceu">Jurassic Park III</td>
+                            <td data-label="Foto">
                                 <figure class="dino-media">
                                     <img src="../img/iconicos/espinossauro.webp" alt="Espinossauro" class="dino-img">
                                 </figure>
@@ -202,9 +189,9 @@
 
                         <tr>
                             <th scope="row">Triceratops</th>
-                            <td>Triceratops</td>
-                            <td>Jurassic Park, The Lost World, Jurassic World, Domínio</td>
-                            <td>
+                            <td data-label="Espécie">Triceratops</td>
+                            <td data-label="Filmes em que apareceu">Jurassic Park, The Lost World, Jurassic World, Domínio</td>
+                            <td data-label="Foto">
                                 <figure class="dino-media">
                                     <img src="../img/iconicos/triceratops.webp" alt="Triceratops" class="dino-img">
                                 </figure>
@@ -213,9 +200,9 @@
 
                         <tr>
                             <th scope="row">Carnotauro</th>
-                            <td>Carnotaurus</td>
-                            <td>The Lost World, Reino Ameaçado, Domínio</td>
-                            <td>
+                            <td data-label="Espécie">Carnotaurus</td>
+                            <td data-label="Filmes em que apareceu">The Lost World, Reino Ameaçado, Domínio</td>
+                            <td data-label="Foto">
                                 <figure class="dino-media">
                                     <img src="../img/iconicos/carnotauro.webp" alt="Carnotauro" class="dino-img">
                                 </figure>
@@ -224,9 +211,9 @@
 
                         <tr>
                             <th scope="row">Compsognato</th>
-                            <td>Compsognathus</td>
-                            <td>The Lost World, Jurassic Park III</td>
-                            <td>
+                            <td data-label="Espécie">Compsognathus</td>
+                            <td data-label="Filmes em que apareceu">The Lost World, Jurassic Park III</td>
+                            <td data-label="Foto">
                                 <figure class="dino-media">
                                     <img src="../img/iconicos/compsognato.webp" alt="Compsognato" class="dino-img">
                                 </figure>
@@ -235,9 +222,9 @@
 
                         <tr>
                             <th scope="row">Anquilossauro</th>
-                            <td>Ankylosaurus</td>
-                            <td>Jurassic Park III, Jurassic World, Reino Ameaçado</td>
-                            <td>
+                            <td data-label="Espécie">Ankylosaurus</td>
+                            <td data-label="Filmes em que apareceu">Jurassic Park III, Jurassic World, Reino Ameaçado</td>
+                            <td data-label="Foto">
                                 <figure class="dino-media">
                                     <img src="../img/iconicos/anquilossauro.webp" alt="Anquilossauro" class="dino-img">
                                 </figure>
@@ -246,9 +233,9 @@
 
                         <tr>
                             <th scope="row">Apatossauro</th>
-                            <td>Apatosaurus</td>
-                            <td>Jurassic Park, Jurassic World, Reino Ameaçado</td>
-                            <td>
+                            <td data-label="Espécie">Apatosaurus</td>
+                            <td data-label="Filmes em que apareceu">Jurassic Park, Jurassic World, Reino Ameaçado</td>
+                            <td data-label="Foto">
                                 <figure class="dino-media">
                                     <img src="../img/iconicos/apatossauro.webp" alt="Apatossauro" class="dino-img">
                                 </figure>
@@ -257,9 +244,9 @@
 
                         <tr>
                             <th scope="row">Ceratossauro</th>
-                            <td>Ceratosaurus</td>
-                            <td>Jurassic Park III</td>
-                            <td>
+                            <td data-label="Espécie">Ceratosaurus</td>
+                            <td data-label="Filmes em que apareceu">Jurassic Park III</td>
+                            <td data-label="Foto">
                                 <figure class="dino-media">
                                     <img src="../img/iconicos/ceratossauro.webp" alt="Ceratossauro" class="dino-img">
                                 </figure>
@@ -268,9 +255,9 @@
 
                         <tr>
                             <th scope="row">Parassaurolofo</th>
-                            <td>Parasaurolophus</td>
-                            <td>Jurassic Park, The Lost World, Jurassic World, Domínio</td>
-                            <td>
+                            <td data-label="Espécie">Parasaurolophus</td>
+                            <td data-label="Filmes em que apareceu">Jurassic Park, The Lost World, Jurassic World, Domínio</td>
+                            <td data-label="Foto">
                                 <figure class="dino-media">
                                     <img src="../img/iconicos/parassaurolofo.webp" alt="Parassaurolofo" class="dino-img">
                                 </figure>
@@ -279,9 +266,9 @@
 
                         <tr>
                             <th scope="row">Stygimoloch</th>
-                            <td>Stygimoloch</td>
-                            <td>Reino Ameaçado</td>
-                            <td>
+                            <td data-label="Espécie">Stygimoloch</td>
+                            <td data-label="Filmes em que apareceu">Reino Ameaçado</td>
+                            <td data-label="Foto">
                                 <figure class="dino-media">
                                     <img src="../img/iconicos/stygimoloch.webp" alt="Stygimoloch" class="dino-img">
                                 </figure>
@@ -290,9 +277,9 @@
 
                         <tr>
                             <th scope="row">Mosassauro</th>
-                            <td>Mosasaurus</td>
-                            <td>Jurassic World, Reino Ameaçado, Domínio</td>
-                            <td>
+                            <td data-label="Espécie">Mosasaurus</td>
+                            <td data-label="Filmes em que apareceu">Jurassic World, Reino Ameaçado, Domínio</td>
+                            <td data-label="Foto">
                                 <figure class="dino-media">
                                     <img src="../img/iconicos/mosassauro.webp" alt="Mosassauro" class="dino-img">
                                 </figure>
@@ -301,9 +288,9 @@
 
                         <tr>
                             <th scope="row">Pteranodon</th>
-                            <td>Pteranodon</td>
-                            <td>Jurassic Park III, Jurassic World</td>
-                            <td>
+                            <td data-label="Espécie">Pteranodon</td>
+                            <td data-label="Filmes em que apareceu">Jurassic Park III, Jurassic World</td>
+                            <td data-label="Foto">
                                 <figure class="dino-media">
                                     <img src="../img/iconicos/pteranodon.webp" alt="Pteranodon" class="dino-img">
                                 </figure>
@@ -312,9 +299,9 @@
 
                         <tr class="modificado">
                             <th scope="row">Indominus rex</th>
-                            <td>Híbrido genético</td>
-                            <td>Jurassic World</td>
-                            <td>
+                            <td data-label="Espécie">Híbrido genético</td>
+                            <td data-label="Filmes em que apareceu">Jurassic World</td>
+                            <td data-label="Foto">
                                 <figure class="dino-media">
                                     <img src="../img/iconicos/indominus-rex.webp" alt="Indominus rex" class="dino-img">
                                 </figure>
@@ -323,9 +310,9 @@
 
                         <tr class="modificado">
                             <th scope="row">Indoraptor</th>
-                            <td>Híbrido genético</td>
-                            <td>Reino Ameaçado</td>
-                            <td>
+                            <td data-label="Espécie">Híbrido genético</td>
+                            <td data-label="Filmes em que apareceu">Reino Ameaçado</td>
+                            <td data-label="Foto">
                                 <figure class="dino-media">
                                     <img src="../img/iconicos/indoraptor.webp" alt="Indoraptor" class="dino-img">
                                 </figure>
@@ -334,9 +321,9 @@
 
                         <tr class="modificado">
                             <th scope="row">Pyroraptor</th>
-                            <td>Pyroraptor</td>
-                            <td>Domínio</td>
-                            <td>
+                            <td data-label="Espécie">Pyroraptor</td>
+                            <td data-label="Filmes em que apareceu">Domínio</td>
+                            <td data-label="Foto">
                                 <figure class="dino-media">
                                     <img src="../img/iconicos/pyroraptor.webp" alt="Pyroraptor" class="dino-img">
                                 </figure>
@@ -345,9 +332,9 @@
 
                         <tr class="modificado">
                             <th scope="row">Therizinosaurus</th>
-                            <td>Therizinosaurus</td>
-                            <td>Domínio</td>
-                            <td>
+                            <td data-label="Espécie">Therizinosaurus</td>
+                            <td data-label="Filmes em que apareceu">Domínio</td>
+                            <td data-label="Foto">
                                 <figure class="dino-media">
                                     <img src="../img/iconicos/therizinosaurus.webp" alt="Therizinosaurus" class="dino-img">
                                 </figure>
@@ -356,9 +343,9 @@
 
                         <tr class="modificado">
                             <th scope="row">Distortus rex (D-Rex)</th>
-                            <td>Híbrido genético</td>
-                            <td>Recomeço</td>
-                            <td>
+                            <td data-label="Espécie">Híbrido genético</td>
+                            <td data-label="Filmes em que apareceu">Recomeço</td>
+                            <td data-label="Foto">
                                 <figure class="dino-media">
                                     <img src="../img/iconicos/d-rex.webp" alt="Distortus rex D-Rex" class="dino-img">
                                 </figure>
@@ -367,9 +354,9 @@
 
                         <tr class="modificado">
                             <th scope="row">Quetzalcoatlus</th>
-                            <td>Quetzalcoatlus</td>
-                            <td>Recomeço</td>
-                            <td>
+                            <td data-label="Espécie">Quetzalcoatlus</td>
+                            <td data-label="Filmes em que apareceu">Recomeço</td>
+                            <td data-label="Foto">
                                 <figure class="dino-media">
                                     <img src="../img/iconicos/quetzalcoatlus.webp" alt="Quetzalcoatlus" class="dino-img">
                                 </figure>
@@ -378,9 +365,9 @@
 
                         <tr class="modificado">
                             <th scope="row">Mutadon</th>
-                            <td>Híbrido genético fracassado de dinossauro e pterossauro , Velociraptor e Pteranodon </td>
-                            <td>Recomeço</td>
-                            <td>
+                            <td data-label="Espécie">Híbrido genético fracassado de dinossauro e pterossauro</td>
+                            <td data-label="Filmes em que apareceu">Recomeço</td>
+                            <td data-label="Foto">
                                 <figure class="dino-media">
                                     <img src="../img/iconicos/mutadon.webp" alt="Mutadon" class="dino-img">
                                 </figure>
@@ -389,9 +376,9 @@
 
                         <tr class="modificado">
                             <th scope="row">Titanosaurus</th>
-                            <td>Titanosaurus modificado geneticamente</td>
-                            <td>Baseado em espécie pré-histórica</td>
-                            <td>
+                            <td data-label="Espécie">Titanosaurus modificado geneticamente</td>
+                            <td data-label="Filmes em que apareceu">Recomeço</td>
+                            <td data-label="Foto">
                                 <figure class="dino-media">
                                     <img src="../img/iconicos/titanosaurus-modificado.webp" alt="Titanosaurus modificado" class="dino-img">
                                 </figure>
@@ -403,33 +390,20 @@
         </section>
     </main>
 
-    <!-- Rodapé da página -->
     <footer>
-
         <h3>Jurassic Verse</h3>
-
-        <p>
-            Projeto acadêmico desenvolvido para a disciplina
-            de ARQIDPW.
-        </p>
-
-        <p class="copyright">
-            &copy; 2026 Jurassic Verse
-        </p>
-
+        <p>Projeto acadêmico desenvolvido para a disciplina de ARQIDPW.</p>
+        <p class="copyright">&copy; 2026 Jurassic Verse</p>
     </footer>
 
-    <!-- Script do menu mobile -->
     <script>
         function clickMenu() {
             if (menu.style.display == 'block') {
                 menu.style.display = 'none'
-            }
-            else {
+            } else {
                 menu.style.display = 'block'
             }
         }
     </script>
-
 </body>
 </html>
