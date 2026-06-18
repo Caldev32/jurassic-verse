@@ -5,13 +5,34 @@ body {
     margin: 0;
 }
 
+.banner-linhadotempo {
+    background-image: url(../img/banner.webp);
+    min-height: 300px;
+
+    /* Ajusta a imagem para cobrir todo o banner */
+    background-size: cover;
+
+    /* Centraliza a imagem de fundo */
+    background-position: center;
+
+    /* Centraliza o conteúdo dentro do banner */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
 /* INTRODUÇÃO */
-h1 {
+.banner-linhadotempo h1 {
     color: rgb(208, 195, 195);
     font-family: "Anton", sans-serif;
     font-size: 60px;
     margin-top: 30px;
     margin-left: 25px;
+    margin-right: 25px;
     text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.6);
 }
 
@@ -160,27 +181,6 @@ h1 {
 }
 
 @media (min-width: 700px) {
-    h1,
-    #paragrafo-verde,
-    #descricao {
-        max-width: 800px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    h1 {
-        font-size: 80px;
-    }
-
-    #paragrafo-verde {
-        font-size: 22px;
-    }
-
-    #descricao {
-        width: 100%;
-        font-size: 16px;
-    }
-
     .conteudo-filme h2 {
         font-size: 28px;
     }

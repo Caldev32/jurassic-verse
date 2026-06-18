@@ -17,11 +17,31 @@ body {
 /* INTRODUÇÃO */
 /* ============================= */
 
+.banner-iconicos {
+    background-image: url(../img/banner.webp);
+    min-height: 300px;
+
+    /* Ajusta a imagem para cobrir todo o banner */
+    background-size: cover;
+
+    /* Centraliza a imagem de fundo */
+    background-position: center;
+
+    /* Centraliza o conteúdo dentro do banner */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
 
 /* Título principal (h1) da página */
 /* Font "Anton" (condensed), grande (60px), cor grisáceo-rosa */
 /* Sombra de texto para contraste sobre fundo escuro */
-h1 {
+.banner-iconicos h1 {
     color: rgb(208, 195, 195);
     font-family: "Anton", sans-serif;
     font-size: 60px;
@@ -32,15 +52,17 @@ h1 {
 }
 
 
+
+
 /* Parágrafo de destaque em verde (Oliva verde) */
 /* ID antigo #paragrafo-verde, mas funcionalmente é um texto de destaque */
 /* Tamaño 18px, cor #6B8E23 (verde oliva) */
 #paragrafo-verde {
     color: #6B8E23;
     margin-bottom: 10px;
+    font-size: 18px;
     margin-left: 25px;
     margin-right: 25px;
-    font-size: 18px;
 }
 
 
@@ -48,11 +70,11 @@ h1 {
 
 #descricao {
     width: min(70vw, 900px);
-    margin-left: 25px;
-    margin-right: 25px;
     font-size: 14px;
     line-height: 1.6;
     padding: 2px;
+    margin-left: 25px;
+    margin-right: 25px;
 }
 
 

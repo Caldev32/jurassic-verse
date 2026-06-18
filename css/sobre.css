@@ -1,0 +1,308 @@
+/*===============================================*/
+/*===== Banner com título e imagem de fundo =====*/
+/*===============================================*/
+.banner-sobre {
+    background-image: url(../img/banner.webp);
+    min-height: 300px;
+
+    /* Ajusta a imagem para cobrir todo o banner */
+    background-size: cover;
+
+    /* Centraliza a imagem de fundo */
+    background-position: center;
+
+    /* Centraliza o conteúdo dentro do banner */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    padding: 20px;
+}
+
+.banner-sobre h1 {
+    color: rgb(208, 195, 195);
+    font-family: "Anton", sans-serif;
+    font-size: 60px;
+    margin-top: 30px;
+    margin-left: 25px;
+    margin-right: 25px;
+    text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.6);
+}
+
+#paragrafo-verde {
+    color: #6B8E23;
+    margin-bottom: 10px;
+    font-size: 18px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+
+/* Descrição principal da introdução */
+
+#descricao {
+    color: white;
+    width: min(70vw, 900px);
+    font-size: 14px;
+    line-height: 1.6;
+    padding: 2px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+/*=================================*/
+/* Seção "Quem Somos*/
+/*=================================*/
+
+.quem-somos {
+    background-color: rgb(12, 12, 12);
+    padding: 20px;
+    width: 100%;
+
+    /* Organiza os elementos em coluna*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+/* Ícone da seção*/
+.quem-somos i {
+    font-size: 55px;
+}
+
+/* Título da seção*/
+.quem-somos h2 {
+    color: #6B8E23;
+
+    font-family: "Anton", sans-serif;
+    font-size: 2.5em;
+
+    margin: 10px;
+
+    /* Alinha o ícone e o texto do título */
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+/* Texto descritivo */
+.quem-somos p {
+    color: white;
+    line-height: 35px;
+
+    margin: 20px;
+    max-width: 900px;
+}
+
+/*=================================*/
+/* Seção Tecnologias
+/*=================================*/
+
+.tecnologias {
+    background-color: rgb(21, 21, 21);
+    padding: 20px;
+    width: 100%;
+
+    /* Organiza os elementos em coluna*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Ícone da seção*/
+.tecnologias i {
+    font-size: 55px;
+}
+
+/* Título da seção*/
+.tecnologias h2 {
+    color: #6B8E23;
+
+    font-family: "Anton", sans-serif;
+    font-size: 2.5em;
+
+    margin: 15px;
+
+    /* Alinha o ícone e o texto do título */
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+/* Container dos cards*/
+.cards-tecnologias {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    justify-content: center;
+    gap: 15px;
+
+    margin-top: 25px;
+}
+
+/* Card individual */
+.card-tecnologia {
+    background-color: rgb(12, 12, 12);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+    padding: 10px 30px;
+
+    border-radius: 5px;
+    border: 1px solid #6B8E23;
+
+    margin: 0 0 20px 0;
+
+    width: 200px;
+}
+
+/* Ícone das tecnologias */
+.card-tecnologia i {
+    background-color: rgb(12, 12, 12);
+    color: #6B8E23;
+    font-size: 70px;
+}
+
+/* Cor padrão do conteúdo do card */
+.card-tecnologia  {
+    color: #6B8E23;
+}
+
+/*=================================*/
+/* Seção Desenvolvedores
+/*=================================*/
+
+.desenvolvedores {
+    background-color:  rgb(12, 12, 12);
+    padding: 20px;
+    width: 100%;
+
+    /* Organiza os elementos em coluna*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Ícone da seção*/
+.desenvolvedores i {
+    font-size: 55px;
+}
+
+/* Título da seção*/
+.desenvolvedores h2 {
+    color: #6B8E23;
+
+    font-family: "Anton", sans-serif;
+    font-size: 2.5em;
+
+    margin: 15px;
+
+    /* Alinha o ícone e o texto do título */
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+/* Container que organiza os cards */
+.cards-devs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+
+    margin: 20px 0;
+
+}
+
+/* Card individual de cada desenvolvedor */
+.card-dev {
+    background-color: rgb(21, 21, 21);
+
+    height: 400px;
+
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    border: 1px solid #6B8E23;
+    border-radius: 10px;
+}
+
+/* Foto do desenvolvedor */
+.card-dev img {
+    width: 120px;
+    border-radius: 50%;
+}
+
+/* Nome do desenvolvedor */
+.card-dev h3 {
+    font-size: 25px;
+    color: #6B8E23;
+}
+
+/* Descrição do desenvolvedor */
+.card-dev p {
+    font-size: 15px;
+    color: white;
+}
+
+/* Container dos links das redes sociais */
+.links-dev {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    gap: 35px;
+
+    margin: 10px 0;
+}
+
+/* Ícones das redes sociais */
+.card-dev i {
+    color: #6B8E23;
+
+}
+
+/* Efeito ao passar o mouse */
+.card-dev i:hover {
+    color: #a7ff04;
+}
+
+
+/*=================================*/
+/* RESPONSIVIDADE - TELAS MAIORES
+/*      MIN-WIDTH: 768px
+/*=================================*/
+
+@media (min-width: 768px) {
+
+    /* Ajusta o espaçamento do texto da seção Quem Somos */
+    .quem-somos p {
+        margin-bottom: 25px;
+        margin-left: 30px;
+    }
+
+    /* Distribui melhor os cards de tecnologias */
+    .cards-tecnologias {
+        justify-content: space-around;
+
+    }
+
+    /* Organiza os cards dos desenvolvedores lado a lado */
+    .cards-devs {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+        margin: 20px 0;
+    }
+}

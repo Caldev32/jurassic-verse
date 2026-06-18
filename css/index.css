@@ -57,6 +57,7 @@
 /* ============================= */
 
 .sobre-home {
+    display: flex;
     padding: 40px 10px;
 
     background-color: #121212;
@@ -210,13 +211,13 @@
     /* Layout lado a lado da seção Sobre */
     .sobre-home {
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
 
         gap: 40px;
 
         max-width: 1100px;
-        margin: 0 auto;
+        margin-left: 10px;
 
         padding: 60px 40px;
     }

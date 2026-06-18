@@ -19,6 +19,10 @@
     <!-- Ícones Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
+    <!-- Ícones Font Wesome-->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
     <!-- Fontes Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -52,22 +56,100 @@
     <!-- Conteúdo principal -->
     <main>
 
-         <section>
-            <h1>Titulo</h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti distinctio, doloribus veniam eaque optio praesentium, sequi, perferendis quas quam earum reiciendis vel fugiat? Deleniti architecto, doloremque velit voluptas voluptates asperiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed repellat quaerat aliquam corporis accusantium fugiat quod eligendi voluptatem esse numquam nostrum nemo necessitatibus exercitationem enim, perspiciatis molestias hic nulla eius?</p>
+        <!-- Imagem de fundo com título da página-->
+        <section class="banner-sobre">
+            <!-- Título principal-->
+            <h1>SOBRE NÓS</h1>
+            <p id="paragrafo-verde">
+                Conheça o projeto e as pessoas por trás do Jurassic Verse
+            </p>
+            <p id="descricao">
+                Descubra como surgiu esta fanpage acadêmica, quais tecnologias foram utilizadas e quem são os estudantes responsáveis por dar vida a este universo inspirado em Jurassic Park e Jurassic World.
+            </p>
+
         </section>
-        <section>
-            <h1>Titulo 1</h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed reprehenderit possimus perferendis officiis alias voluptates quam quae, consequuntur mollitia vel tempore laboriosam incidunt nisi adipisci. Consequuntur ipsam voluptatum corporis soluta Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse explicabo amet aliquam sit, dolor architecto earum? Totam porro dicta corrupti blanditiis deserunt voluptatem quia? Illum excepturi perspiciatis culpa a sed.</p>
+
+        <!-- Texto sobre nós e nosso objetivo-->
+        <section class="quem-somos">
+            <h2><i class="bi bi-people-fill"></i>QUEM SOMOS?</h2>
+            <p>Somos estudantes do curso de Tecnologia em Sistemas para Internet (TSI) do Instituto Federal de São Paulo (IFSP) – Campus Araraquara e apaixonados pelo universo de Jurassic Park e Jurassic World. O Jurassic Verse surgiu da ideia de unir nossa admiração pela franquia com a oportunidade de colocar em prática os conhecimentos adquiridos durante o curso. Mais do que um projeto acadêmico, esta fanpage representa nosso interesse por tecnologia, criatividade e trabalho em equipe. Nosso objetivo é oferecer aos visitantes um espaço organizado e interativo, reunindo informações, curiosidades, imagens e conteúdos sobre a saga, ao mesmo tempo em que desenvolvemos habilidades em desenvolvimento web e transformamos o aprendizado em uma experiência prática e divertida.</p>
+
         </section>
-        <section>
-            <h1>Titulo 1</h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed reprehenderit possimus perferendis officiis alias voluptates quam quae, consequuntur mollitia vel tempore laboriosam incidunt nisi adipisci. Consequuntur ipsam voluptatum corporis soluta Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse explicabo amet aliquam sit, dolor architecto earum? Totam porro dicta corrupti blanditiis deserunt voluptatem quia? Illum excepturi perspiciatis culpa a sed.</p>
+
+        <!-- Cards com tecnologias que utilizamos no trabalho-->
+        <!-- HTML5, CSS3, JavaScript, Git, GitHub-->
+        <section class="tecnologias">
+            <h2><i class="bi bi-cpu"></i>TECNOLOGIAS USADAS</h2>
+
+            <div class="cards-tecnologias">
+                <article class="card-tecnologia">
+                    <i class="fa-brands fa-html5"></i>
+                    <h3>HTML5</h3>
+                
+                </article>
+                <article class="card-tecnologia">
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <h3>CSS3</h3>
+
+                </article>
+                <article class="card-tecnologia">
+                    <i class="fa-brands fa-js"></i>
+                    <h3>JavaScript</h3>
+
+                </article>
+                <article class="card-tecnologia">
+                    <i class="fa-brands fa-git-alt"></i>
+                    <h3>Git</h3>
+
+                </article>
+                <article class="card-tecnologia">
+                    <i class="fa-brands fa-github"></i>
+                    <h3>GitHub</h3>
+
+                </article>
+            </div>
+
         </section>
-        <section>
-            <h1>Titulo 1</h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed reprehenderit possimus perferendis officiis alias voluptates quam quae, consequuntur mollitia vel tempore laboriosam incidunt nisi adipisci. Consequuntur ipsam voluptatum corporis soluta Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse explicabo amet aliquam sit, dolor architecto earum? Totam porro dicta corrupti blanditiis deserunt voluptatem quia? Illum excepturi perspiciatis culpa a sed.</p>
+
+        <!-- Cards com nome e redes sociais-->
+        <section class="desenvolvedores">
+            <h2><i class="fa-brands fa-dev"></i>DESENVOLVEDORES</h2>
+
+            <div class="cards-devs">
+
+                <!-- Card Mateus -->
+                <article class="card-dev">
+                    <img src="../img/perfil.png" alt="Foto de Mateus Calixto">
+
+                    <h3>Mateus Calixto de Oliveira</h3>
+                    <p>Estudante de Tecnologia em Sistemas para Internet (TSI).</p>
+
+                    <!-- Redes sociais Mateus -->
+                    <div class="links-dev">
+                        <a href="" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+                        <a href="" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+                    </div>
+                </article>
+
+                <!-- Card Pedro -->
+                <article class="card-dev">
+                    <img src="../img/foto-pedro.webp" alt="Foto de Pedro Aragoni">
+
+                    <h3>Pedro Henrique Cândido Aragoni</h3>
+                    <p>Estudante de Tecnologia em Sistemas para Internet (TSI).</p>
+                    <!-- Redes sociais Pedro -->
+                    <div class="links-dev">
+                        <a href="" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+                        <a href="https://www.linkedin.com/in/pedro-aragoni/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/ph_aragoni/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+                    </div>
+                </article>
+
+            </div>
         </section>
+
+        
     </main>
 
     <!-- Rodapé da página -->
@@ -85,18 +167,6 @@
         </p>
 
     </footer>
-
-    <!-- Script do menu mobile -->
-    <script>
-        function clickMenu() {
-            if (menu.style.display == 'block') {
-                menu.style.display = 'none'
-            }
-            else {
-                menu.style.display = 'block'
-            }
-        }
-    </script>
 
 </body>
 </html>
