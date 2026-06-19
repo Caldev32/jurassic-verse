@@ -112,6 +112,11 @@ body {
     border-radius: 20px;
     padding: 20px;
     box-shadow: inset 0px 1px 10px rgba(255, 255, 255, 0.049);
+    transition: .5s all ease-out !important;
+    
+}
+.conteudo-filme:hover{
+    transform: scale(1.1);
 }
 
 .cena-filme {
@@ -167,12 +172,14 @@ body {
         transform: none;
     }
 
-    .filme-card {
+    .filme-card{
         width: 100%;
         left: 0 !important;
         padding-left: 55px !important;
         padding-right: 0 !important;
     }
+    
+    
 
     .ponto-timeline {
         left: 11px !important;

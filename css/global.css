@@ -29,6 +29,11 @@ header {
 header .logo {
     margin: 5px;
     width: 200px;
+    transition: .5s all ease-out;
+}
+
+header .logo:hover {
+    transform: scale(1.3);
 }
 
 /* Menu Mobile */
@@ -44,11 +49,13 @@ header i {
 
     padding: 5px;
     font-size: 30px;
+
 }
 
 header i:hover {
     cursor: pointer;
     background-color: #182204;
+    
 }
 
 /* Navegação */
@@ -85,12 +92,14 @@ ul li{
     font-size: 1rem;
     letter-spacing: 1px;
     font-family: "Anton", sans-serif;
+    transition: .4s all ease-out;
 }
 
 .nav-item:hover {
     background-color: #182204;
     color: #6B8E23;
     cursor: pointer;
+    transform: scale(1.2);
 }
 /* css para o item selecionado, como o li(para que toda a caixa seja clicavel) está com display flex, é necesssario um justify content para alinha o conteudo */
 .nav-item-selected {

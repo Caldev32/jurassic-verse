@@ -148,6 +148,13 @@
 
     margin-bottom: 15px;
 }
+/* animação de hover  */
+.conteudo-home li{
+    transition: .4s all ease-out;
+}
+.conteudo-home li:hover{
+    transform: scale(1.2);
+}
 
 /* Caso algum card utilize imagem em vez de ícone */
 .conteudo-home li img {
