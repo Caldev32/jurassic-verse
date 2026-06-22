@@ -1,9 +1,3 @@
-
-/* ============================= */
-/* ESTILOS GERAIS DA PÁGINA */
-/* Corpo principal com fundo escuro e texto branco */
-/* ============================= */
-
 body {
     color: white;
     background-color: #0f0f0f;
@@ -11,37 +5,8 @@ body {
     margin: 0;
 }
 
-
-
-/* ============================= */
 /* INTRODUÇÃO */
-/* ============================= */
-
-.banner-iconicos {
-    background-image: url(../img/banner.webp);
-    min-height: 300px;
-
-    /* Ajusta a imagem para cobrir todo o banner */
-    background-size: cover;
-
-    /* Centraliza a imagem de fundo */
-    background-position: center;
-
-    /* Centraliza o conteúdo dentro do banner */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-
-    padding: 20px;
-    margin-bottom: 20px;
-}
-
-
-/* Título principal (h1) da página */
-/* Font "Anton" (condensed), grande (60px), cor grisáceo-rosa */
-/* Sombra de texto para contraste sobre fundo escuro */
-.banner-iconicos h1 {
+h1 {
     color: rgb(208, 195, 195);
     font-family: "Anton", sans-serif;
     font-size: 60px;
@@ -51,419 +16,295 @@ body {
     text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.6);
 }
 
-
-
-
-/* Parágrafo de destaque em verde (Oliva verde) */
-/* ID antigo #paragrafo-verde, mas funcionalmente é um texto de destaque */
-/* Tamaño 18px, cor #6B8E23 (verde oliva) */
 #paragrafo-verde {
     color: #6B8E23;
     margin-bottom: 10px;
-    font-size: 18px;
     margin-left: 25px;
     margin-right: 25px;
+    font-size: 18px;
 }
-
-
-/* Descrição principal da introdução */
 
 #descricao {
     width: min(70vw, 900px);
-    font-size: 14px;
-    line-height: 1.6;
-    padding: 2px;
     margin-left: 25px;
     margin-right: 25px;
+    font-size: 14px;
+    line-height: 1.6;
 }
 
-
-
-/* ============================= */
 /* TABELA */
-/* ============================= */
-
-
-/* Seção que contém toda a tabela de dinossauros */
-
-.secao-tabela-dinossauros {
-    width: calc(100vw - 20px);
-    margin: 24px auto;
-    padding: 10px;
+#tabela-dinossauros {
+    width: min(92vw, 1200px);
+    margin: 40px auto;
+    padding: 20px 0;
 }
 
-
-/* Wrapper da tabela - em mobile é apenas um container sem estilos extras */
-/* Em desktop ganha scroll horizontal, borda, background e sombra */
 .tabela-wrapper {
     width: 100%;
-    padding: 2px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    background-color: #181818;
+    border: 1px solid #6B8E23;
+    border-radius: 20px;
+    box-shadow: inset 0px 1px 10px rgba(255, 255, 255, 0.049);
+    padding: 10px;
+    -webkit-overflow-scrolling: touch;
 }
 
-
-/* Tabela principal de dinossauros */
-/* Em mobile: display block (cada linha é um card) */
-/* Em desktop: display table (tabela tradicional) */
-.tabela-dinossauros {
+.tabela-iconicos {
     width: 100%;
+    min-width: 980px;
     border-collapse: collapse;
+    margin-bottom: 0;
+    background: transparent;
 }
 
-
-/* Legenda/capítulo da tabela */
-/* Texto 13px, cor grisáceo, alinhado à esquerda */
-/* Padding superior 0, laterais 6px, inferior 14px */
-.tabela-dinossauros caption {
+.tabela-iconicos caption {
     color: rgb(206, 197, 197);
-    padding: 0 6px 14px;
-    font-size: 13px;
+    caption-side: top;
+    padding: 10px;
+    font-size: 14px;
     text-align: left;
 }
 
-
-/* Cabeçalho (thead) - HIDDEN em MOBILE */
-/* Usado para esconder o cabeçalho em mobile usando clip e position absolute */
-/* height e width de 1px, overflow hidden - invisível mas existe no DOM */
-.tabela-dinossauros thead {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
+.tabela-iconicos thead th {
+    background-color: #111111;
+    color: #6B8E23;
+    border-bottom: 1px solid #6B8E23;
+    font-family: "Anton", sans-serif;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    padding: 18px 16px;
+    text-align: left;
+    vertical-align: middle;
 }
 
-
-/* Elementos da tabela - MOBILE: todos como display block */
-/* Cada linha (tr) e célula (td/th) se torna um bloco independente */
-/* width: 100% para ocupar toda largura disponível */
-.tabela-dinossauros,
-.tabela-dinossauros tbody,
-.tabela-dinossauros tr,
-.tabela-dinossauros th,
-.tabela-dinossauros td {
-    display: block;
-    width: 100%;
-    box-sizing: border-box;
+.tabela-iconicos tbody th,
+.tabela-iconicos tbody td {
+    padding: 18px 16px;
+    vertical-align: middle;
+    color: rgb(206, 197, 197);
+    font-size: 14px;
+    line-height: 1.7;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    text-align: left;
 }
 
-
-/* Cada linha da tabela = CARD em MOBILE */
-/* Background #181818 (quase preto) */
-/* Bordas verde oliva com transparência (rgba 0.35) */
-/* Border-radius 16px, padding 14px, margin-bottom 16px */
-/* Sombra inset para efeito de profundidade */
-.tabela-dinossauros tbody tr {
-    background-color: #181818;
-    border: 1px solid rgba(107, 142, 35, 0.35);
-    border-radius: 16px;
-    padding: 14px;
-    margin-bottom: 16px;
-    box-shadow: inset 0px 1px 10px rgba(255, 255, 255, 0.03);
+.tabela-iconicos tbody th[scope="row"] {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    width: 180px;
 }
 
-
-/* Linha com destaque especial (classe .linha-destaque) */
-/* Background verde oliva com maior opacidade (0.08) */
-.tabela-dinossauros tbody tr.linha-destaque {
+.tabela-iconicos tbody tr:hover {
     background-color: rgba(107, 142, 35, 0.08);
 }
 
-
-/* Nome do dinossauro (th com scope="row") */
-/* width 100%, font-size 20px, cor branca */
-/* padding 0 0 12px, margin-bottom 10px */
-/* Bordas divisória verde oliva abaixo do nome */
-.tabela-dinossauros tbody th[scope="row"] {
-    width: 100%;
-    font-size: 20px;
-    color: #ffffff;
-    padding: 0 0 12px;
-    margin-bottom: 10px;
-    border-bottom: 1px solid rgba(107, 142, 35, 0.35);
+.tabela-iconicos tbody tr.modificado {
+    background-color: rgba(107, 142, 35, 0.06);
 }
 
-
-/* Células de dados (td) em MOBILE */
-/* border none, padding 10px 0 */
-/* font-size 14px, line-height 1.5 */
-/* cor grisáceo rgb(206, 197, 197) */
-.tabela-dinossauros tbody td {
-    border: none;
-    padding: 10px 0;
-    font-size: 14px;
-    line-height: 1.5;
-    color: rgb(206, 197, 197);
-}
-
-
-/* Labels antes de cada célula em MOBILE */
-/* content: attr(data-label) - pega o valor do atributo data-label do HTML */
-/* display block para aparecer em linha própria */
-/* cor verde oliva #6B8E23, margin-bottom 6px */
-.tabela-dinossauros tbody td::before {
-    content: attr(data-label);
-    display: block;
-    font-size: 12px;
-    font-weight: bold;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: #6B8E23;
-    margin-bottom: 6px;
-}
-
-
-/* Bloco de mídia (imagem) do dinossauro */
-/* width 100%, margin 0 */
-/* flex-direction column, gap 8px */
-/* background color para padronizar */
 .dino-media {
-    background-color: #000000;
-    width: 100%;
-    height: 100%;
     margin: 0;
     display: flex;
     flex-direction: column;
     gap: 8px;
-    border-radius: 12px;
 }
 
-
-
-/* Imagem do dinossauro em MOBILE */
-/* width 100%, height auto */
-/* aspect-ratio 16/10 (formato widescreen) */
-/* object-fit contain para ter toda a imagem */
-/* border-radius 12px, borda 1px semi-transparente */
 .dino-img {
-    width: 100%;
-    height: 100%;
-    aspect-ratio: 16 / 10;
-    object-fit: contain;
+    width: 180px;
+    max-width: 100%;
+    height: 110px;
+    object-fit: cover;
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.1);
     display: block;
 }
 
-
-
-
-/* ============================= */
-/* DESKTOP */
-/* Versão para telas grandes (min-width: 900px) */
-/* Tabela tradicional com cabeçalho visível e linhas horizontais */
-/* ============================= */
-
-
-@media (min-width: 900px) {
-    /* Seção de introdução em DESKTOP */
-    /* max-width 1000px, centralizada com margin auto */
-    /* padding 30px 25px 0 */
-    .introducao-dinossauros {
-        max-width: 1000px;
-        margin: 0 auto;
-        padding: 30px 25px 0;
+/* TABLET */
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 52px;
     }
 
-
-    /* Título h1 em DESKTOP */
-    /* font-size aumenta de 60px → 80px */
-    .introducao-dinossauros h1 {
-        font-size: 80px;
+    #descricao {
+        width: auto;
     }
 
-
-    /* Texto de destaque em DESKTOP */
-    /* font-size aumenta de 18px → 22px */
-    .introducao-dinossauros .texto-destaque {
-        font-size: 22px;
+    .tabela-iconicos {
+        min-width: 860px;
     }
 
+    .tabela-iconicos thead th {
+        font-size: 16px;
+        padding: 14px 12px;
+    }
 
-    /* Descrição em DESKTOP */
-    /* width: 100% (dentro do max-width da seção) */
-    /* font-size aumenta de 14px → 16px */
-    .introducao-dinossauros .texto-descricao {
-        width: 100%;
+    .tabela-iconicos tbody th,
+    .tabela-iconicos tbody td {
+        font-size: 13px;
+        padding: 14px 12px;
+    }
+
+    .tabela-iconicos tbody th[scope="row"] {
         font-size: 16px;
     }
 
+    .dino-img {
+        width: 150px;
+        height: 95px;
+    }
+}
 
-    /* Seção da tabela em DESKTOP */
-    /* width: min(92vw, 1200px) - mais larga que mobile */
-    /* margin: 40px auto (mais espaço vertical) */
-    /* padding: 20px 0 */
-    .secao-tabela-dinossauros {
-        width: min(92vw, 1200px);
-        margin: 40px auto;
-        padding: 20px 0;
+/* MOBILE REAL */
+@media (max-width: 768px) {
+    h1,
+    #paragrafo-verde,
+    #descricao {
+        margin-left: 16px;
+        margin-right: 16px;
     }
 
+    h1 {
+        font-size: 38px;
+        line-height: 1.1;
+    }
 
-    /* Wrapper da tabela em DESKTOP */
-    /* overflow-x: auto - scroll horizontal se necessário */
-    /* background #181818, borda verde oliva */
-    /* border-radius 20px, shadow inset */
-    /* padding 10px, -webkit-overflow-scrolling: touch */
+    #paragrafo-verde {
+        font-size: 16px;
+    }
+
+    #descricao {
+        width: auto;
+        font-size: 14px;
+    }
+
+    #tabela-dinossauros {
+        width: calc(100vw - 20px);
+        margin: 24px auto;
+    }
+
     .tabela-wrapper {
-        overflow-x: auto;
-        overflow-y: hidden;
-        background-color: #181818;
-        border: 1px solid #6B8E23;
-        border-radius: 20px;
-        box-shadow: inset 0px 1px 10px rgba(255, 255, 255, 0.049);
-        padding: 10px;
-        -webkit-overflow-scrolling: touch;
-    }
-
-
-    /* Tabela em DESKTOP */
-    /* min-width: 980px - garante largura mínima */
-    /* display: table - volta ao comportamento de tabela tradicional */
-    .tabela-dinossauros {
-        width: 100%;
-        min-width: 980px;
-        display: table;
-    }
-
-
-    /* Caption em DESKTOP */
-    /* padding: 10px (mais espaçado) */
-    /* font-size: 16px (maior) */
-    .tabela-dinossauros caption {
-        padding: 10px;
-        font-size: 16px;
-    }
-
-
-    /* thead em DESKTOP - VISÍVEL */
-    /* position: static, width/height auto, margin 0 */
-    /* overflow: visible, clip: auto - mostra o cabeçalho */
-    .tabela-dinossauros thead {
-        position: static;
-        width: auto;
-        height: auto;
-        margin: 0;
+        padding: 0;
+        border: none;
+        background: transparent;
+        box-shadow: none;
         overflow: visible;
-        clip: auto;
     }
 
-
-    /* th do cabeçalho em DESKTOP */
-    /* display: table-cell - volta a ser célula de tabela */
-    /* background #111111, color verde oliva */
-    /* border-bottom verde oliva */
-    /* font "Anton", 18px, letter-spacing 0.5px */
-    /* padding 18px 16px, text-align left, vertical-align middle */
-    .tabela-dinossauros thead th {
-        display: table-cell;
-        background-color: #111111;
-        color: #6B8E23;
-        border-bottom: 1px solid #6B8E23;
-        font-family: "Anton", sans-serif;
-        font-size: 18px;
-        letter-spacing: 0.5px;
-        padding: 18px 16px;
-        text-align: left;
-        vertical-align: middle;
+    .tabela-iconicos {
+        min-width: 100%;
+        width: 100%;
     }
 
-
-    /* tbody em DESKTOP */
-    /* display: table-row-group */
-    .tabela-dinossauros tbody {
-        display: table-row-group;
+    .tabela-iconicos caption {
+        padding: 0 6px 14px 6px;
+        font-size: 13px;
     }
 
-
-    /* tr em DESKTOP */
-    /* display: table-row */
-    .tabela-dinossauros tr {
-        display: table-row;
+    .tabela-iconicos thead {
+        border: 0;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
     }
 
-
-    /* th e td em DESKTOP */
-    /* display: table-cell, width: auto */
-    .tabela-dinossauros th,
-    .tabela-dinossauros td {
-        display: table-cell;
-        width: auto;
+    .tabela-iconicos,
+    .tabela-iconicos tbody,
+    .tabela-iconicos tr,
+    .tabela-iconicos th,
+    .tabela-iconicos td {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
     }
 
-
-    /* Células do corpo em DESKTOP */
-    /* padding 18px 16px, vertical-align middle */
-    /* color grisáceo, font-size 15px, line-height 1.7 */
-    /* border-bottom 1px semi-transparente, text-align left */
-    .tabela-dinossauros tbody th,
-    .tabela-dinossauros tbody td {
-        padding: 18px 16px;
-        vertical-align: middle;
-        color: rgb(206, 197, 197);
-        font-size: 15px;
-        line-height: 1.7;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-        text-align: left;
+    .tabela-iconicos tbody tr {
+        background-color: #181818;
+        border: 1px solid rgba(107, 142, 35, 0.35);
+        border-radius: 16px;
+        padding: 14px;
+        margin-bottom: 16px;
+        box-shadow: inset 0px 1px 10px rgba(255, 255, 255, 0.03);
     }
 
-
-    /* Nome do dinossauro em DESKTOP */
-    /* color white, font-size 18px, font-weight bold */
-    /* width: 180px (coluna fixa), padding 18px 16px */
-    /* margin-bottom: 0, border-bottom igual às outras células */
-    .tabela-dinossauros tbody th[scope="row"] {
-        color: white;
-        font-size: 18px;
-        font-weight: bold;
-        width: 180px;
-        padding: 18px 16px;
-        margin-bottom: 0;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-    }
-
-
-    /* Labels ::before em DESKTOP - REMOVIDOS */
-    /* content: none - não mostra labels em desktop */
-    .tabela-dinossauros tbody td::before {
-        content: none;
-    }
-
-
-    /* Efeito hover em DESKTOP */
-    /* background verde oliva com opacidade 0.08 */
-    .tabela-dinossauros tbody tr:hover {
+    .tabela-iconicos tbody tr.modificado {
         background-color: rgba(107, 142, 35, 0.08);
     }
 
-
-    /* Linha destaque em DESKTOP */
-    /* background verde oliva com opacidade 0.06 (mais suave) */
-    .tabela-dinossauros tbody tr.linha-destaque {
-        background-color: rgba(107, 142, 35, 0.06);
+    .tabela-iconicos tbody th[scope="row"] {
+        width: 100%;
+        font-size: 20px;
+        color: #ffffff;
+        padding: 0 0 12px 0;
+        margin-bottom: 10px;
+        border-bottom: 1px solid rgba(107, 142, 35, 0.35);
     }
 
+    .tabela-iconicos tbody td {
+        border: none;
+        padding: 10px 0 10px 0;
+        font-size: 14px;
+        line-height: 1.5;
+    }
 
-    /* Imagem em DESKTOP */
-    /* width: 180px (fixa), max-width: 100% */
-    /* height: 110px (fixa), aspect-ratio: auto */
+    .tabela-iconicos tbody td::before {
+        content: attr(data-label);
+        display: block;
+        font-size: 12px;
+        font-weight: bold;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: #6B8E23;
+        margin-bottom: 6px;
+    }
+
+    .dino-media {
+        width: 100%;
+    }
+
     .dino-img {
-        width: 180px;
-        max-width: 100%;
-        height: 110px;
-        object-fit: contain;
-        aspect-ratio: auto;
-        transition: .4s all ease-out;
-        background-color: #000000;
-    }
-    /* .dino-media{
-        background-color: #000000;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 10;
         border-radius: 12px;
-    } */
-    
-    .dino-img:hover {
-        transform: scale(1.5) translate(-20px);
+    }
+}
+
+/* DESKTOP GRANDE */
+@media (min-width: 900px) {
+    h1,
+    #paragrafo-verde,
+    #descricao {
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    h1 {
+        font-size: 80px;
+    }
+
+    #paragrafo-verde {
+        font-size: 22px;
+    }
+
+    #descricao {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .tabela-iconicos caption {
+        font-size: 16px;
+    }
+
+    .tabela-iconicos tbody th,
+    .tabela-iconicos tbody td {
+        font-size: 15px;
     }
 }
