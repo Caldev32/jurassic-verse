@@ -202,7 +202,6 @@ body {
 /* Labels antes de cada célula em MOBILE */
 /* content: attr(data-label) - pega o valor do atributo data-label do HTML */
 /* display block para aparecer em linha própria */
-/* font-size 12px, bold, uppercase, letter-spacing 0.04em */
 /* cor verde oliva #6B8E23, margin-bottom 6px */
 .tabela-dinossauros tbody td::before {
     content: attr(data-label);
@@ -219,7 +218,9 @@ body {
 /* Bloco de mídia (imagem) do dinossauro */
 /* width 100%, margin 0 */
 /* flex-direction column, gap 8px */
+/* background color para padronizar */
 .dino-media {
+    background-color: #000000;
     width: 100%;
     height: 100%;
     margin: 0;
@@ -234,7 +235,7 @@ body {
 /* Imagem do dinossauro em MOBILE */
 /* width 100%, height auto */
 /* aspect-ratio 16/10 (formato widescreen) */
-/* object-fit fill para preencherr */
+/* object-fit contain para ter toda a imagem */
 /* border-radius 12px, borda 1px semi-transparente */
 .dino-img {
     width: 100%;

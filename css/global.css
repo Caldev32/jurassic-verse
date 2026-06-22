@@ -114,6 +114,7 @@ ul li{
         justify-content: center;
         font-family: "Anton", sans-serif;
         color: #6B8E23;
+        cursor: pointer;
     }
 
 /* Footer */

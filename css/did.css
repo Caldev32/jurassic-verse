@@ -117,15 +117,40 @@
     width: 300px;
     height: auto;
     display: block;
+    padding: 2px;
+    border: 1px solid #6B8E23;
+    border-radius: 12px;
 }
 
 .curiosidade figcaption {
     color: #ccc;
-    font-size: 0.9rem;
+    font-size: 0.73rem;
     margin-top: 8px;
     font-style: italic;
 }
 .imgs{
     display: flex;
-    
+    flex-wrap: wrap;
 }
+.imagem-retrato{
+    width: auto !important;
+    height: 200px !important;
+    display: block;
+}
+@media (min-width: 700px){
+    .imgs{
+        display: flex;
+    }
+    .imagem-retrato{
+    width: auto !important;
+    height: 300px !important;
+    display: block;
+    }
+    .curiosidade img {
+    transition: .5s all ease-out;
+    }
+    .curiosidade img:hover{
+        transform: scale(1.2);
+    }
+}
+

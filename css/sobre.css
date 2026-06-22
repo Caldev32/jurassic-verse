@@ -173,6 +173,10 @@
 .card-tecnologia  {
     color: #6B8E23;
 }
+/* link para a tecnologia usada */
+.link-tecnologia{
+    text-decoration: none;
+}
 
 /*=================================*/
 /* Seção Desenvolvedores
@@ -277,6 +281,70 @@
     color: #a7ff04;
 }
 
+/* agradecimentos */
+.agradecimentos {
+    background-color:  rgb(12, 12, 12);
+    padding: 20px;
+    width: 100%;
+
+    /* Organiza os elementos em coluna*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.agradecimentos i {
+    font-size: 55px;
+}
+
+/* Título da seção*/
+.agradecimentos h2 {
+    color: #6B8E23;
+
+    font-family: "Anton", sans-serif;
+    font-size: 2.5em;
+
+    margin: 15px;
+
+    /* Alinha o ícone e o texto do título */
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+.conteudo-agradecimento{
+    font-style: italic;
+    background-color: rgb(37, 37, 37);
+}
+
+.card-agradecimento {
+    background-color: rgb(21, 21, 21);
+
+    height: 400px;
+
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    /* max-width: 385px; só tirar caso for colocar outro card */
+    border: 1px solid #6B8E23;
+    border-radius: 10px;
+}
+
+/* Foto do desenvolvedor */
+.card-agradecimento img {
+    width: 120px;
+    border-radius: 50%;
+}
+.conteudo-agradecimento{
+    font-size: 15px;
+    color: white;
+}
+.card-agradecimento h3 {
+    font-size: 25px;
+    color: #6B8E23;
+}
 
 /*=================================*/
 /* RESPONSIVIDADE - TELAS MAIORES
@@ -304,5 +372,8 @@
         justify-content: space-around;
 
         margin: 20px 0;
+    }
+    .conteudo-agradecimento{
+        width: 350px;
     }
 }
