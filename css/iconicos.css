@@ -227,7 +227,6 @@ body {
     flex-direction: column;
     gap: 8px;
     border-radius: 12px;
-    background-color: #000000;
 }
 
 
@@ -458,10 +457,10 @@ body {
         transition: .4s all ease-out;
         background-color: #000000;
     }
-    .dino-media{
+    /* .dino-media{
         background-color: #000000;
         border-radius: 12px;
-    }
+    } */
     
     .dino-img:hover {
         transform: scale(1.5) translate(-20px);

@@ -1,0 +1,131 @@
+.banner-galeria {
+    background-image: url(../img/banner.webp);
+    min-height: 300px;
+
+    /* Ajusta a imagem para cobrir todo o banner */
+    background-size: cover;
+
+    /* Centraliza a imagem de fundo */
+    background-position: center;
+
+    /* Centraliza o conteúdo dentro do banner */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.banner-galeria h1 {
+    color: rgb(208, 195, 195);
+    font-family: "Anton", sans-serif;
+    font-size: 60px;
+    margin-top: 30px;
+    margin-left: 25px;
+    margin-right: 25px;
+    text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.6);
+}
+
+#paragrafo-verde {
+    color: #6B8E23;
+    margin-bottom: 10px;
+    font-size: 18px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+
+/* Descrição principal da introdução */
+
+#descricao {
+    color: white;
+    width: min(70vw, 900px);
+    font-size: 14px;
+    line-height: 1.6;
+    padding: 2px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.curiosidade {
+    background-color: rgb(12, 12, 12);
+    padding: 20px;
+    width: 100%;
+
+    /* Organiza os elementos em coluna*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+/* Ícone da seção*/
+.curiosidade i {
+    font-size: 55px;
+}
+
+/* Título da seção*/
+.curiosidade h2 {
+    color: #6B8E23;
+
+    font-family: "Anton", sans-serif;
+    font-size: 2.5em;
+
+    margin: 10px;
+
+    /* Alinha o ícone e o texto do título */
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+/* Texto descritivo */
+.curiosidade p {
+    color: white;
+    line-height: 100%;
+    align-self: normal;
+    margin: 20px;
+    max-width: 900px;
+}
+
+/* conteudo da curiosidade */
+.conteudo-curiosidade {
+    display: flex;
+    align-items: center;
+    
+    gap: 30px;
+}
+
+.conteudo-curiosidade p {
+    color: white;
+    line-height: 100%;
+    margin: 20px;
+    max-width: 900px;
+    flex: 1;
+}
+
+/* ultilizando html semantico */
+
+.curiosidade figure {
+    margin: 20px;
+    align-self: flex-start; /* esquerda */
+}
+
+.curiosidade img {
+    width: 300px;
+    height: auto;
+    display: block;
+}
+
+.curiosidade figcaption {
+    color: #ccc;
+    font-size: 0.9rem;
+    margin-top: 8px;
+    font-style: italic;
+}
+.imgs{
+    display: flex;
+    
+}
