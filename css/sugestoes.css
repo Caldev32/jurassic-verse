@@ -12,15 +12,33 @@ body {
 /* INTRODUÇÃO DA PÁGINA */
 /* ============================= */
 
-h1 {
-    color: rgb(208, 195, 195);
+.banner-sugestoes {
+    background-image: url(../img/banner.webp);
+    min-height: 300px;
 
+    /* Ajusta a imagem para cobrir todo o banner */
+    background-size: cover;
+
+    /* Centraliza a imagem de fundo */
+    background-position: center;
+
+    /* Centraliza o conteúdo dentro do banner */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.banner-sugestoes h1 {
+    color: rgb(208, 195, 195);
     font-family: "Anton", sans-serif;
     font-size: 60px;
-
     margin-top: 30px;
     margin-left: 25px;
-
+    margin-right: 25px;
     text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.6);
 }
 
@@ -208,6 +226,7 @@ label {
 }
 
 #checkbox-termos input {
+    cursor: pointer;
     width: 20px;
     height: 20px;
 }
@@ -244,6 +263,8 @@ label {
     text-transform: uppercase;
     font-size: 13px;
     font-weight: 600;
+
+    cursor: pointer;
 }
 
 .botoes-form #enviar {
@@ -259,6 +280,11 @@ label {
     margin-right: 10px;
 }
 
+.botoes-form #enviar:hover {
+    color: white;
+    background-color: #8dc126;
+}
+
 .botoes-form #limpar {
     color: #6B8E23;
     background-color: transparent;
@@ -271,6 +297,11 @@ label {
     margin-right: 10px;
 }
 
+.botoes-form #limpar:hover {
+    color: white;
+    background-color: #6a8e2322;
+}
+
 
 /* ============================= */
 /* RESPONSIVIDADE - DESKTOP */
@@ -278,28 +309,6 @@ label {
 
 @media (min-width: 700px) {
 
-    /* Centraliza o conteúdo da página */
-    h1,
-    #paragrafo-verde,
-    #descricao {
-        max-width: 800px;
-
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    h1 {
-        font-size: 80px;
-    }
-
-    #paragrafo-verde {
-        font-size: 22px;
-    }
-
-    #descricao {
-        width: 100%;
-        font-size: 16px;
-    }
 
     /* Limita a largura do formulário no desktop */
     form {

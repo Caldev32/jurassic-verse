@@ -3,32 +3,54 @@
 /* ============================= */
 
 .banner-galeria {
-    background-image: url(../img/fundo-galeria.png);
+    background-image: url(../img/banner.webp);
     min-height: 300px;
 
+    /* Ajusta a imagem para cobrir todo o banner */
     background-size: cover;
+
+    /* Centraliza a imagem de fundo */
     background-position: center;
 
+    /* Centraliza o conteúdo dentro do banner */
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 
-    box-shadow: 0px 15px 30px rgba(107, 142, 35, 0.25);
+    padding: 20px;
+    margin-bottom: 20px;
 }
 
 .banner-galeria h1 {
     color: rgb(208, 195, 195);
-
     font-family: "Anton", sans-serif;
-    font-size: 70px;
-
-    margin-top: 100px;
-
+    font-size: 60px;
+    margin-top: 30px;
+    margin-left: 25px;
+    margin-right: 25px;
     text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.6);
+}
 
-    border-bottom: 2px solid #6B8E23;
+#paragrafo-verde {
+    color: #6B8E23;
+    margin-bottom: 10px;
+    font-size: 18px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
 
-    line-height: 1.2;
+
+/* Descrição principal da introdução */
+
+#descricao {
+    color: white;
+    width: min(70vw, 900px);
+    font-size: 14px;
+    line-height: 1.6;
+    padding: 2px;
+    margin-left: 25px;
+    margin-right: 25px;
 }
 
 
@@ -71,10 +93,14 @@ h2 i {
     padding: 10px;
 
     border: 3px solid #6a8e237e;
-    border-radius: 5px;
+    border-radius: 12px;
 
     overflow: hidden;
     box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.233);
+    transition: .4s all ease-out;
+}
+.card:hover{
+    transform: scale(1.2);
 }
 
 .card img {
@@ -84,8 +110,10 @@ h2 i {
     object-fit: contain;
     display: block;
 
-    border-radius: 5px;
+    border-radius: 12px;
+   
 }
+
 
 .card h3 {
     color: rgb(231, 225, 225);

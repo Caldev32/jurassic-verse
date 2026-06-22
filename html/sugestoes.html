@@ -4,11 +4,14 @@
     <!-- Configurações básicas da página -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jurassic Park</title>
+    <title>Jurassic Verse - Sugestões</title>
 
     <!-- Arquivos CSS -->
     <link rel="stylesheet" href="../css/sugestoes.css">
     <link rel="stylesheet" href="../css/global.css">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="../img/logo.webp" type="image/x-icon">
 
     <!-- JavaScript do menu mobile -->
     <script src="../js/menu.js"></script>
@@ -26,7 +29,7 @@
 
     <!-- Cabeçalho da página -->
     <header>
-        <img src="../img/logo.webp" class="logo" loading="lazy" alt="Logo Jurassic Fan">
+        <a href="../index.html"><img src="../img/logo.webp" class="logo" loading="lazy" alt="Logo Jurassic Fan"></a>
 
         <!-- Ícone do menu mobile -->
         <i class="bi bi-list" onclick="clickMenu()"></i>
@@ -34,12 +37,13 @@
         <!-- Menu de navegação -->
         <nav id="menu">
             <ul id="nav-bar">
-                <li><a href="../index.html" class="nav-item">Menu Inicial</a></li>
-                <li><a href="./linhadotempo.html" class="nav-item">Linha do tempo</a></li>
-                <li><a href="./html/did.html" class="nav-item">"Did you know?"</a></li>
-                <li><a href="./iconicos.html" class="nav-item">Dinossauros Iconicos</a></li>
-                <li><a href="./sobre.html" class="nav-item">Sobre nós</a></li>
-                <li><a href="./sugestoes.html" class="nav-item">Sugestões</a></li>
+                <li ><a href="../index.html" class="nav-item" >Home</a></li>
+                <li><a href="./did.html" class="nav-item">"Did you know?"</a></li>
+                <li ><a href="./iconicos.html" class="nav-item" >Dinossauros Icônicos</a></li>
+                <li ><a href="./linhadotempo.html" class="nav-item" >Linha do tempo</a></li>
+                <li ><a href="./galeria.html" class="nav-item">Galeria</a></li>
+                <li ><a href="./sobre.html"  class="nav-item">Sobre nós</a></li>
+                <li class="nav-item-selected">Sugestões</li>
             </ul>
         </nav>
     </header>
@@ -47,16 +51,16 @@
     <!-- Conteúdo principal -->
     <main>
 
-        <!-- Introdução da página -->
-        <h1>SUGESTÕES</h1>
-
-        <p id="paragrafo-verde">
-            Ajude a melhorar o Jurassic Verse
-        </p>
-
-        <p id="descricao">
-            Sua opinião é muito importante para nós. Envie sugestões, críticas ou elegios para tornar a experiência ainda melhor!
-        </p>
+        <section class="banner-sugestoes">
+            <!-- Introdução da página -->
+            <h1>SUGESTÕES</h1>
+            <p id="paragrafo-verde">
+                Ajude a melhorar o Jurassic Verse
+            </p>
+            <p id="descricao">
+                Sua opinião é muito importante para nós. Envie sugestões, críticas ou elegios para tornar a experiência ainda melhor!
+            </p>
+        </section>
 
         <!-- Formulário de sugestões -->
         <form action="#" method="post">
@@ -98,7 +102,7 @@
                         <label for="filme">Filme favorito da franquia:</label>
 
                         <select name="filme" id="filme" required>
-                            <option value="">Selecione uma opção</option>
+                            <option value="" selected disabled>Selecione uma opção</option>
                             <option value="jurassic-park">Jurassic Park: O Parque dos Dinossauros</option>
                             <option value="mundo-perdido">Jurassic Park: O Mundo Perdido</option>
                             <option value="jurassic-park-3">Jurassic Park III</option>
@@ -187,11 +191,11 @@
 
         <p>
             Projeto acadêmico desenvolvido para a disciplina
-            de Desenvolvimento Web.
+            de ARQIDPW.
         </p>
 
         <p class="copyright">
-            © 2026 Jurassic Verse
+            &copy; 2026 Jurassic Verse
         </p>
     </footer>
 

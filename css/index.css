@@ -1,32 +1,276 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-/* ajuste do botão  */
-#menu-button img{
-    height: 10px;
-}
-/* ajusta o offcanvas */
-#logo-fossil{
-    height:60px
-}
-.nav-item{
-    text-decoration: none;
-    color: aliceblue;
-    size: 30px;
-    padding-left: 10px;
+/* ============================= */
+/* BANNER PRINCIPAL DA HOME */
+/* ============================= */
 
-}
-#nav-container{
-    list-style:none;
+.banner-home {
+    min-height: 500px;
+    width: 100vw;
+    padding: 40px 25px;
+
+    /* Imagem principal da página */
+    background-image: url(../img/banner.webp);
+    background-size: cover;
+    background-position: center;
+
     display: flex;
     flex-direction: column;
-    gap: 30px;
-    
+    justify-content: flex-end;
+}
+
+/* Texto "Bem-vindo ao" */
+.banner-home p:first-child {
+    color: #6B8E23;
+
+    font-family: "Anton", sans-serif;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+/* Título principal */
+.banner-home h1 {
+    color: rgb(208, 195, 195);
+
+    font-family: "Anton", sans-serif;
+    font-size: 4rem;
+    line-height: 1;
+
+    text-transform: uppercase;
+
+    /* Sombra para destacar o texto sobre a imagem */
+    text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.7);
+}
+
+/* Descrição da fanpage */
+.banner-home p:last-child {
+    color: white;
+
+    max-width: 320px;
+    margin-top: 20px;
+
+    font-size: 1rem;
+    line-height: 1.5;
 }
 
 
-footer{
-    margin: 40px;
+/* ============================= */
+/* SEÇÃO SOBRE O PROJETO */
+/* ============================= */
+
+.sobre-home {
+    display: flex;
+    padding: 40px 10px;
+
+    background-color: #121212;
+    text-align: center;
+}
+
+/* Ícone do T-Rex */
+.sobre-home img {
+    width: 200px;
+    height: 200px;
+
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+/* Títulos das seções */
+.sobre-home h2,
+.conteudo-home h2 {
+    color: #6B8E23;
+
+    font-family: "Anton", sans-serif;
+    font-size: 2rem;
+
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    margin-bottom: 30px;
+}
+
+/* Texto explicativo */
+.sobre-home p {
+    color: #F5F5F5;
+
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+
+/* ============================= */
+/* SEÇÃO DE NAVEGAÇÃO DA HOME */
+/* CARDS COM LINKS DAS PÁGINAS */
+/* ============================= */
+
+.conteudo-home {
+    padding: 40px 25px;
+}
+
+/* Centraliza o título da seção */
+.conteudo-home h2 {
+    text-align: center;
+}
+
+/* Lista dos cards */
+.conteudo-home ul {
+    list-style: none;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Card individual */
+.conteudo-home li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: #181818;
+
+    border: 1px solid #6B8E23;
+    border-radius: 12px;
+
+    padding: 25px 20px;
+
+    text-align: center;
+
+    box-shadow: inset 0px 1px 10px rgba(255, 255, 255, 0.049);
+}
+
+/* Ícones Bootstrap dos cards */
+.conteudo-home li i {
+    color: #6B8E23;
+
+    width: 45px;
+    height: 45px;
+
+    font-size: 45px;
+
+    margin-bottom: 15px;
+}
+/* animação de hover  */
+.conteudo-home li{
+    transition: .4s all ease-out;
+}
+.conteudo-home li:hover{
+    transform: scale(1.2);
+}
+
+/* Caso algum card utilize imagem em vez de ícone */
+.conteudo-home li img {
+    width: 150px;
+
+    /* Ajuste visual para posicionamento */
+    margin: -70px;
+}
+
+/* Título do card */
+.conteudo-home li h3 {
+    color: #F5F5F5;
+
+    font-family: "Anton", sans-serif;
+    font-size: 1.7rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* Texto descritivo */
+.conteudo-home li p {
+    color: #BDBDBD;
+
+    margin: 10px 0 20px;
+    line-height: 1.5;
+}
+
+/* Link de acesso */
+.conteudo-home li a {
+    color: #6B8E23;
+
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+/* Efeito ao passar o mouse */
+.conteudo-home li a:hover {
+    cursor: pointer;
+    color: #97c737;
+}
+
+/* Ícone da seta do link */
+.conteudo-home li a i {
+    margin-left: 6px;
+    font-size: 1rem;
+}
+
+
+/* ============================= */
+/* RESPONSIVIDADE - DESKTOP */
+/* ============================= */
+
+@media (min-width: 768px) {
+
+    /* Centraliza melhor o conteúdo do banner */
+    .banner-home {
+        justify-content: center;
+    }
+
+    /* Layout lado a lado da seção Sobre */
+    .sobre-home {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        gap: 40px;
+
+        max-width: 1100px;
+        margin-left: 10px;
+
+        padding: 60px 40px;
+    }
+
+    /* Ajuste do tamanho da imagem */
+    .sobre-home img {
+        width: 220px;
+
+        /* Impede que a imagem seja comprimida */
+        flex-shrink: 0;
+    }
+
+    /* Limita a largura do texto */
+    .sobre-home div {
+        max-width: 650px;
+        text-align: left;
+    }
+
+    /* Ajustes do título */
+    .sobre-home h2 {
+        text-align: left;
+        font-size: 40px;
+
+        margin-bottom: 20px;
+    }
+
+    /* Ajustes do texto */
+    .sobre-home p {
+        text-align: left;
+
+        font-size: 18px;
+        line-height: 1.7;
+    }
+
+    /* Cards lado a lado */
+    .conteudo-home ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        justify-content: space-around;
+        gap: 20px;
+    }
+
+    /* Largura fixa dos cards */
+    .conteudo-home li {
+        width: 280px;
+    }
 }

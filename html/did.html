@@ -1,46 +1,193 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+    <!-- Configurações básicas da página -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Did you Know?</title>
-    <link rel="stylesheet" href="./css/index.css">
+    <title>Jurassic Verse - "Did you know?"</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="../img/logo.webp" type="image/x-icon">
+    <!-- CSS da página -->
+    <link rel="stylesheet" href="../css/did.css">
+    <link rel="stylesheet" href="../css/global.css">
+
+    <!-- JavaScript do menu hamburguer da página -->
+    <script src="../js/menu.js"></script>
+
+    <!-- Ícones Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <!-- Fontes Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Fjalla+One&family=Skranji:wght@400;700&family=Vina+Sans&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <!-- header do documento -->
+
+    <!-- Cabeçalho da página -->
     <header>
-        <h1>Jurassic Park</h1>
-        <nav>
+        <a href="../index.html"><img src="../img/logo.webp" class="logo" loading="lazy" alt="Logo Jurassic Fan"></a>
+
+        <!-- Ícone do menu mobile -->
+        <i class="bi bi-list" onclick="clickMenu()"></i>
+
+        <!-- Menu de navegação -->
+        <nav id="menu">
             <ul id="nav-bar">
-                <li ><a href="../index.html" class="nav-item">Menu Inicial</a></li>
-                <li ><a href="./linhadotempo.html" class="nav-item">Linha do tempo</a></li>
-                <li ><a href="./iconicos.html"class="nav-item">Dinossauros Iconicos</a></li>
+                <li ><a href="../index.html" class="nav-item" >Home</a></li>
+                <li class="nav-item-selected">"Did you know?"</li>
+                <li ><a href="./iconicos.html" class="nav-item" >Dinossauros Icônicos</a></li>
+                <li ><a href="./linhadotempo.html" class="nav-item" >Linha do tempo</a></li>
                 <li ><a href="./galeria.html" class="nav-item">Galeria</a></li>
-                <li ><a href="./sobre.html" class="nav-item">Sobre nós</a></li>
-                <li ><a href="./sugestoes.html"class="nav-item">Sugestões</a></li>
+                <li ><a href="./sobre.html"  class="nav-item">Sobre nós</a></li>
+                <li ><a href="./sugestoes.html" class="nav-item">Sugestões</a></li>
             </ul>
         </nav>
     </header>
+
+    <!-- Conteúdo principal -->
     <main>
-        <section>
-            <h1>Titulo</h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti distinctio, doloribus veniam eaque optio praesentium, sequi, perferendis quas quam earum reiciendis vel fugiat? Deleniti architecto, doloremque velit voluptas voluptates asperiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed repellat quaerat aliquam corporis accusantium fugiat quod eligendi voluptatem esse numquam nostrum nemo necessitatibus exercitationem enim, perspiciatis molestias hic nulla eius?</p>
+        <!-- Banner da galeria -->
+        <section class="banner-galeria">
+            <h1>DID YOU KNOW?</h1>
+            <p id="paragrafo-verde">
+                Curiosidades a respeito da aclamada franquia Jurassic
+            </p>
+            <p id="descricao">
+                Descubra curiosidades a respeito da icônica franquia Jurassic &copy; durante as gravações, roteiro, atores e personagens.            
+            </p>
         </section>
-        <section>
-            <h1>Titulo 1</h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed reprehenderit possimus perferendis officiis alias voluptates quam quae, consequuntur mollitia vel tempore laboriosam incidunt nisi adipisci. Consequuntur ipsam voluptatum corporis soluta Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse explicabo amet aliquam sit, dolor architecto earum? Totam porro dicta corrupti blanditiis deserunt voluptatem quia? Illum excepturi perspiciatis culpa a sed.</p>
+
+         <!-- curiosidades  -->
+        
+        <section class="curiosidade">
+            <h2><i class="bi bi-robot"></i>T-rex assombrado</h2>
+
+            <p>
+                Antes de decidir usar animais animatrônicos e imagens de computação gráfica para os efeitos relacionados aos dinossauros, Spielberg (diretor) queria usar animação em stop-motion para esses efeitos.
+                <br><br>
+                Durante as gravações, o Tiranossauro Rex ocasionalmente ficava com defeito devido à chuva. A produtora Kathleen Kennedy relembra que a situação inicialmente assustava a equipe: “O T-rex ficava maluco às vezes. Nos assustava muito. Estávamos almoçando e, de repente, o T-rex ganhava vida. A princípio não sabíamos o que estava acontecendo, e então percebemos que era a chuva. Você ouvia pessoas começarem a gritar”.
+            </p>
+
+            <figure>
+                <img src="../img/did-you-know/animatronico-jurassic-1.webp" alt="Animatrônico do T-Rex durante as gravações">
+                <figcaption>
+                    Animatrônico do T-Rex utilizado durante as gravações de Jurassic Park.
+                </figcaption>
+            </figure>
         </section>
-        <section>
-            <h1>Titulo 1</h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed reprehenderit possimus perferendis officiis alias voluptates quam quae, consequuntur mollitia vel tempore laboriosam incidunt nisi adipisci. Consequuntur ipsam voluptatum corporis soluta Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse explicabo amet aliquam sit, dolor architecto earum? Totam porro dicta corrupti blanditiis deserunt voluptatem quia? Illum excepturi perspiciatis culpa a sed.</p>
+        <section class="curiosidade">
+            <h2><i class="bi bi-person-raised-hand"></i>Jeff Goldblum VS Jim Carrey</h2>
+
+            <p>
+                No papel do Dr. Ian Malcolm, Jeff Goldblum é um dos primeiros nomes que vem à cabeça quando pensamos no elenco da franquia. Contudo, ele não vou o único a lutar pelo papel. Jim Carrey também fez audição para o personagem.
+            </p>
+            <div class="imgs">
+                <figure>
+                <img class="imagem-retrato" src="../img/did-you-know/jeff goldblum.webp" alt="Jeff Goldblum">
+                <figcaption>
+                    Jeff Goldblum.
+                </figcaption>
+            </figure>
+            <figure>
+                <img class="imagem-retrato" src="../img/did-you-know/jim-carrey.webp" alt="Jim Carrey">
+                <figcaption>
+                    Jim Carrey.
+                </figcaption>
+            </div>
+            
         </section>
-        <section>
-            <h1>Titulo 1</h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed reprehenderit possimus perferendis officiis alias voluptates quam quae, consequuntur mollitia vel tempore laboriosam incidunt nisi adipisci. Consequuntur ipsam voluptatum corporis soluta Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse explicabo amet aliquam sit, dolor architecto earum? Totam porro dicta corrupti blanditiis deserunt voluptatem quia? Illum excepturi perspiciatis culpa a sed.</p>
+        <section class="curiosidade">
+            <h2><i class="bi bi-car-front"></i>JIPE QUE ATRAVESSOU GERAÇÕES</h2>
+
+            <p>
+                O jipe reparado por Zach e Gray, Jurassic World (2015), é numerado "29", que é exatamente a mesma numeração do veículo turístico que John Hammond montou no início de Jurassic Park - Parque dos Dinossauros (1993).
+            </p>
+            <div class="imgs">
+                <figure>
+                <img src="../img/did-you-know/jipe-1.webp" alt="Jurassic World (2015)">
+                <figcaption>
+                    Jipe de numero 29 Jurassic World (2015).
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="../img/did-you-know/jipe-2.webp" alt="Jurassic Park - Parque dos Dinossauros (1993)">
+                <figcaption>
+                    Jipe de numero 29 Jurassic Park - Parque dos Dinossauros (1993).
+                </figcaption>
+            </div>
+            
+        </section>
+
+        <section class="curiosidade">
+            <h2><i class="bi bi-car-front-fill"></i>GIROSFERA == JIPE</h2>
+
+            <p>
+                Mesmo sem ter voltado para a direção, Spielberg se envolveu diretamente com o projeto, assumindo o cargo de produtor executivo e dando várias sugestões criativas para o diretor Colin Trevorrow. Dentre elas, as mais legais foram o vale das Girosferas e a arquibancada móvel do aquário do Mosassauro. A Girosfera seria o equivalente a ideia do passeio original do primeiro filme, que era de poder transitar em meio aos dinossauros
+            </p>
+            <div class="imgs">
+                <figure>
+                <img src="../img/did-you-know/girosfera.webp" alt="Jurassic World (2015)">
+                <figcaption>
+                    Girosfera Jurassic World (2015).
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="../img/did-you-know/jipe-3.webp" alt="Jurassic Park - Parque dos Dinossauros (1993)">
+                <figcaption>
+                    Jipe de Jurassic Park - Parque dos Dinossauros (1993)
+                </figcaption>
+            </div>
+            
+        </section>
+        <section class="curiosidade">
+            <h2><i class="bi bi-fingerprint"></i>BOTAS PARA CLAIRE</h2>
+
+            <p>
+                Uma das grandes discussões do primeiro filme da nova triologia foi a escolha de colocar uma protagonista feminina sobre um par de sapatos de salto alto para correr pela selva e fugir de dinossauros. Trevorrow ainda defende a personagem dizendo que ela não esperava passar por aquela experiência e, por isso, não estava vestida de acordo, mas, para Jurassic World: Reino Ameaçado, promete que Claire usará botas
+            </p>
+            
+            <figure>
+                <img src="../img/did-you-know/claire-de-saltos.webp" alt="Jurassic World (2015)">
+                <figcaption>
+                    Claire correndo de salto alto, Jurassic World(2015).
+                </figcaption>
+            </figure>
+            
+            
+            
         </section>
     </main>
+
+    <!-- Rodapé da página -->
     <footer>
-        <p>&copy; Lorem ipsum dolor sit amet consectetur adipisicing elit. Error velit quibusdam cupiditate reiciendis quae voluptatum nesciunt sequi nam soluta maiores consequuntur maxime quisquam voluptates corporis labore alias, ex eos ullam.</p>
+
+        <h3>Jurassic Verse</h3>
+
+        <p>
+            Projeto acadêmico desenvolvido para a disciplina
+            de ARQIDPW.
+        </p>
+
+        <p class="copyright">
+            &copy; 2026 Jurassic Verse
+        </p>
+
     </footer>
+
+    <!-- Script do menu mobile -->
+    <script>
+        function clickMenu() {
+            if (menu.style.display == 'block') {
+                menu.style.display = 'none'
+            }
+            else {
+                menu.style.display = 'block'
+            }
+        }
+    </script>
+
 </body>
 </html>

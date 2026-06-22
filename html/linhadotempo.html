@@ -3,44 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jurassic Park</title>
-    <link rel="stylesheet" href="./css/index.css">
+    <title>Jurassic Verse - Linha do Tempo</title>
+
+    <link rel="stylesheet" href="../css/linhadotempo.css">
+    <link rel="stylesheet" href="../css/global.css">
+
+    <script src="../js/menu.js"></script>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="../img/logo.webp" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Fjalla+One&family=Skranji:wght@400;700&family=Vina+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- header do documento -->
+
     <header>
-        <h1>Jurassic Park</h1>
-        <nav>
+        <a href="../index.html"><img src="../img/logo.webp" class="logo" loading="lazy" alt="Logo Jurassic Fan"></a>
+
+        <i class="bi bi-list" onclick="clickMenu()"></i>
+
+        <!-- MENU  -->
+        <nav id="menu">
             <ul id="nav-bar">
-                <li ><a href="../index.html" class="nav-item">Menu Inicial</a></li>
-                <li ><a href="./did.html"class="nav-item">"Did you know?"</a></li>
-                <li ><a href="./iconicos.html"class="nav-item">Dinossauros Iconicos</a></li>
+                <li ><a href="../index.html" class="nav-item" >Home</a></li>
+                <li><a href="./did.html" class="nav-item">"Did you know?"</a></li>
+                <li ><a href="./iconicos.html" class="nav-item" >Dinossauros Icônicos</a></li>
+                <li class="nav-item-selected">Linha do tempo</li>
                 <li ><a href="./galeria.html" class="nav-item">Galeria</a></li>
-                <li ><a href="./sobre.html" class="nav-item">Sobre nós</a></li>
+                <li ><a href="./sobre.html"  class="nav-item">Sobre nós</a></li>
                 <li ><a href="./sugestoes.html" class="nav-item">Sugestões</a></li>
             </ul>
         </nav>
     </header>
+
     <main>
-        <section>
-            <h1>Titulo</h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti distinctio, doloribus veniam eaque optio praesentium, sequi, perferendis quas quam earum reiciendis vel fugiat? Deleniti architecto, doloremque velit voluptas voluptates asperiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed repellat quaerat aliquam corporis accusantium fugiat quod eligendi voluptatem esse numquam nostrum nemo necessitatibus exercitationem enim, perspiciatis molestias hic nulla eius?</p>
+        <section class="banner-linhadotempo">
+            <h1>LINHA DO TEMPO</h1>
+            <p id="paragrafo-verde">
+                A trajetória dos filmes da franquia Jurassic
+            </p>
+            <p id="descricao">
+                Veja a evolução da saga ao longo dos anos, desde o primeiro clássico até os lançamentos mais recentes.
+            </p>
         </section>
-        <section>
-            <h1>Titulo 1</h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed reprehenderit possimus perferendis officiis alias voluptates quam quae, consequuntur mollitia vel tempore laboriosam incidunt nisi adipisci. Consequuntur ipsam voluptatum corporis soluta Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse explicabo amet aliquam sit, dolor architecto earum? Totam porro dicta corrupti blanditiis deserunt voluptatem quia? Illum excepturi perspiciatis culpa a sed.</p>
-        </section>
-        <section>
-            <h1>Titulo 1</h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed reprehenderit possimus perferendis officiis alias voluptates quam quae, consequuntur mollitia vel tempore laboriosam incidunt nisi adipisci. Consequuntur ipsam voluptatum corporis soluta Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse explicabo amet aliquam sit, dolor architecto earum? Totam porro dicta corrupti blanditiis deserunt voluptatem quia? Illum excepturi perspiciatis culpa a sed.</p>
-        </section>
-        <section>
-            <h1>Titulo 1</h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed reprehenderit possimus perferendis officiis alias voluptates quam quae, consequuntur mollitia vel tempore laboriosam incidunt nisi adipisci. Consequuntur ipsam voluptatum corporis soluta Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse explicabo amet aliquam sit, dolor architecto earum? Totam porro dicta corrupti blanditiis deserunt voluptatem quia? Illum excepturi perspiciatis culpa a sed.</p>
+
+        <section id="linha-do-tempo">
+
+            <article class="filme-card esquerda">
+                <div class="ponto-timeline"></div>
+                <div class="conteudo-filme">
+                    <img src="../img/linhadotempo/jurassic-park.webp" alt="Imagem genérica do filme" class="cena-filme">
+                    <span class="ano">1993</span>
+                    <h2>Jurassic Park: O Parque dos Dinossauros</h2>
+                    <p>O início de tudo, com a criação de um parque temático repleto de dinossauros recriados por engenharia genética.</p>
+                </div>
+            </article>
+
+            <article class="filme-card direita">
+                <div class="ponto-timeline"></div>
+                <div class="conteudo-filme">
+                    <img src="../img/linhadotempo/jurassic-park-o-mundo-perdido.webp" alt="Jurassic Park: O Mundo Perdido" class="cena-filme">
+                    <span class="ano">1997</span>
+                    <h2>Jurassic Park: O Mundo Perdido</h2>
+                    <p>Uma nova aventura na Ilha Sorna revela dinossauros vivendo livremente, longe do parque original.</p>
+                </div>
+            </article>
+
+            <article class="filme-card esquerda">
+                <div class="ponto-timeline"></div>
+                <div class="conteudo-filme">
+                    <img src="../img/linhadotempo/jurassic-park-3.webp" alt="Jurassic Park 3" class="cena-filme">
+                    <span class="ano">2001</span>
+                    <h2>Jurassic Park III</h2>
+                    <p>Uma missão inesperada leva os personagens de volta à ilha, agora enfrentando perigos ainda maiores.</p>
+                </div>
+            </article>
+
+            <article class="filme-card direita">
+                <div class="ponto-timeline"></div>
+                <div class="conteudo-filme">
+                    <img src="../img/linhadotempo/jurassic-world.webp" alt="Jurassic World" class="cena-filme">
+                    <span class="ano">2015</span>
+                    <h2>Jurassic World</h2>
+                    <p>O parque finalmente funciona como atração global, mas um novo predador híbrido foge do controle.</p>
+                </div>
+            </article>
+
+            <article class="filme-card esquerda">
+                <div class="ponto-timeline"></div>
+                <div class="conteudo-filme">
+                    <img src="../img/linhadotempo/jurassic-world--reino-ameaçado.webp" alt="Jurassic World: Reino Ameaçado" class="cena-filme">
+                    <span class="ano">2018</span>
+                    <h2>Jurassic World: Reino Ameaçado</h2>
+                    <p>Os dinossauros precisam ser salvos de um desastre natural, enquanto interesses obscuros surgem no caminho.</p>
+                </div>
+            </article>
+
+            <article class="filme-card direita">
+                <div class="ponto-timeline"></div>
+                <div class="conteudo-filme">
+                    <img src="../img/linhadotempo/jurassic-world-dominio.webp" alt="Jurassic World: Domínio" class="cena-filme">
+                    <span class="ano">2022</span>
+                    <h2>Jurassic World: Domínio</h2>
+                    <p>Humanos e dinossauros passam a coexistir no mesmo planeta, criando um novo cenário de tensão e sobrevivência.</p>
+                </div>
+            </article>
+
+            <article class="filme-card esquerda">
+                <div class="ponto-timeline"></div>
+                <div class="conteudo-filme">
+                    <img src="../img/linhadotempo/jurassic-world-recomeco.webp" alt="Jurassic World: Recomeço" class="cena-filme">
+                    <span class="ano">2025</span>
+                    <h2>Jurassic World: Recomeço</h2>
+                    <p>Se passa cinco anos após os eventos de Jurassic World: Domínio, mostrando um planeta Terra cujo clima se tornou hostil e inóspito para os dinossauros. As poucas criaturas sobreviventes vivem isoladas em ambientes equatoriais que mimetizam as condições tropicais do passado</p>
+                </div>
+            </article>
         </section>
     </main>
+
     <footer>
-        <p>&copy; Lorem ipsum dolor sit amet consectetur adipisicing elit. Error velit quibusdam cupiditate reiciendis quae voluptatum nesciunt sequi nam soluta maiores consequuntur maxime quisquam voluptates corporis labore alias, ex eos ullam.</p>
+        <h3>Jurassic Verse</h3>
+        <p>
+            Projeto acadêmico desenvolvido para a disciplina
+            de ARQIDPW.
+        </p>
+        <p class="copyright">
+            &copy; 2026 Jurassic Verse
+        </p>
     </footer>
+
 </body>
 </html>
