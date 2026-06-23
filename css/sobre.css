@@ -287,12 +287,13 @@
     padding: 20px;
     width: 100%;
 
-    /* Organiza os elementos em coluna*/
+    /* Organiza os elementos em coluna titulo e conteudo*/
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 20px;
 }
+/* icone bootstrap */
 .agradecimentos i {
     font-size: 55px;
 }
@@ -311,41 +312,57 @@
     align-items: center;
     gap: 25px;
 }
+
+/* container flex para organizar os .cards-agradecimentos */
+.cards-agradecimentos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    
+    margin: 20px 0;
+}
+
+/* nome da pessoa  */
+.card-agradecimento h3 {
+    font-size: 25px;
+    color: #6B8E23;
+}
+/* frase para a pesoa agradecida */
 .conteudo-agradecimento{
     font-style: italic;
     background-color: rgb(37, 37, 37);
+    font-size: 15px;
+    color: white;
 }
-
+/* usa as mesmas configuraççoes do cards dev  */
 .card-agradecimento {
     background-color: rgb(21, 21, 21);
 
     height: 400px;
 
     padding: 20px;
-
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 20px;
-    /* max-width: 385px; só tirar caso for colocar outro card */
+    max-width: 358px; 
     border: 1px solid #6B8E23;
     border-radius: 10px;
 }
 
-/* Foto do desenvolvedor */
+/* Foto da pessoa agradecida */
 .card-agradecimento img {
     width: 120px;
     border-radius: 50%;
 }
-.conteudo-agradecimento{
-    font-size: 15px;
-    color: white;
-}
-.card-agradecimento h3 {
-    font-size: 25px;
-    color: #6B8E23;
-}
+
+
+
+
+
 
 /*=================================*/
 /* RESPONSIVIDADE - TELAS MAIORES
@@ -374,8 +391,16 @@
 
         margin: 20px 0;
     }
+    /* segue a mesma logica do cards devs  */
+    .cards-agradecimentos {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
 
+        /* margin: 20px 0; */
+    }
 
+    /* fixa o tamanho do paragrafo coma  a frase */
     .conteudo-agradecimento{
         width: 350px;
     }
