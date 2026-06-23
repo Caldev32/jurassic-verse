@@ -29,7 +29,7 @@ body {
 .banner-linhadotempo h1 {
     color: rgb(208, 195, 195);
     font-family: "Anton", sans-serif;
-    font-size: 60px;
+    font-size: 50px; /* Padrão inicial do mobile */
     margin-top: 30px;
     margin-left: 25px;
     margin-right: 25px;
@@ -44,13 +44,17 @@ body {
 }
 
 #descricao {
-    width: 70vw;
+    width: auto; /* Padrão inicial do mobile */
     margin-left: 25px;
+    margin-right: 25px; /* Adicionado margem direita para equilibrar no mobile */
     font-size: 14px;
     line-height: 1.6;
 }
 
-/* TIMELINE */
+/*------ linha do tempo filmes jurassic ---------- */
+
+
+/* seção de conteudo - linha do tempo */
 #linha-do-tempo {
     position: relative;
     width: 90vw;
@@ -59,37 +63,36 @@ body {
     padding: 20px 0;
 }
 
+/* injeta o elemento de linha que percorre todo o contudo com :: beofre*/
 #linha-do-tempo::before {
     content: "";
     position: absolute;
     top: 0;
     bottom: 0;
-    left: 50%;
+    left: 20px; /* Padrão inicial do mobile */
     width: 4px;
-    transform: translateX(-50%);
     background-color: #6B8E23;
     border-radius: 10px;
 }
 
+/* card base de filme  */
 .filme-card {
     position: relative;
-    width: 50%;
+    width: 100%; /* Padrão inicial do mobile (largura total) */
+    /* impede que no mobile um cole no outro  */
     margin-bottom: 40px;
-}
-
-.filme-card.esquerda {
     left: 0;
-    padding-right: 40px;
+    padding-left: 55px; /* Afastamento da linha verde no mobile */
+    padding-right: 0;
+    box-sizing: border-box;
 }
 
-.filme-card.direita {
-    left: 50%;
-    padding-left: 40px;
-}
-
-.ponto-timeline {
+/* psedolemento de ponto na timeline */
+.filme-card::after {
+    content: ""; /* vazio */
     position: absolute;
     top: 30px;
+    left: 9px; /* Centralizado perfeitamente na linha de 20px usando a matemática (20px + 2px da metade da linha - 9px da metade do miolo - 4px da borda) */
     width: 18px;
     height: 18px;
     background-color: #6B8E23;
@@ -98,27 +101,17 @@ body {
     z-index: 2;
 }
 
-.filme-card.esquerda .ponto-timeline {
-    right: -9px;
-}
-
-.filme-card.direita .ponto-timeline {
-    left: -9px;
-}
-
+/* div base para conteudo do filme  */
 .conteudo-filme {
     background-color: #181818;
     border: 1px solid #6B8E23;
     border-radius: 20px;
     padding: 20px;
     box-shadow: inset 0px 1px 10px rgba(255, 255, 255, 0.049);
-    transition: .5s all ease-out !important;
-    
-}
-.conteudo-filme:hover{
-    transform: scale(1.1);
+    transition: none !important; /* SEM TRANSIÇÃO NO CELULAR */
 }
 
+/* imagem do filme  */
 .cena-filme {
     width: 100%;
     height: 220px;
@@ -127,7 +120,7 @@ body {
     margin-bottom: 15px;
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
-
+/* ano em destaque */
 .ano {
     display: inline-block;
     margin-bottom: 10px;
@@ -136,13 +129,13 @@ body {
     font-size: 22px;
     letter-spacing: 1px;
 }
-
+/* titulo */
 .conteudo-filme h2 {
     margin: 0 0 10px 0;
     font-size: 24px;
     color: white;
 }
-
+/* sinopse */
 .conteudo-filme p {
     margin: 0;
     color: rgb(206, 197, 197);
@@ -151,43 +144,66 @@ body {
 }
 
 /* RESPONSIVIDADE */
-@media (max-width: 768px) {
-    h1,
-    #paragrafo-verde,
-    #descricao {
-        margin-left: 25px;
-        margin-right: 25px;
-    }
 
-    h1 {
-        font-size: 50px;
+/* Telas maiores (Modo Computador / Desktop) */
+@media (min-width: 769px) {
+    /* aumenta o tamanho do titulo */
+    .banner-linhadotempo h1 {
+        font-size: 60px;
     }
-
+    /* aumenta a largura da descrição */
     #descricao {
-        width: auto;
+        width: 70vw;
     }
 
     #linha-do-tempo::before {
-        left: 20px;
-        transform: none;
+        left: 50%;
+        transform: translateX(-50%);
     }
 
-    .filme-card{
-        width: 100%;
-        left: 0 !important;
-        padding-left: 55px !important;
-        padding-right: 0 !important;
+    .filme-card {
+        width: 50%;
     }
-    
-    
 
-    .ponto-timeline {
-        left: 11px !important;
-        right: auto !important;
+    .filme-card.esquerda {
+        /* Como ele no bloco base (width:50%) ocupa 50% empurra o card para a esquerda com left: 0,assim ele cobre a metade esquerda da tela. */
+        left: 0;
+        /* para o card não passar pela linha do tempo */
+        padding-right: 40px; 
+        padding-left: 0;
     }
-}
 
-@media (min-width: 700px) {
+    .filme-card.direita {
+        /* Como ele no bloco base (width:50%) ocupa 50% empurra o card para a direita com left: 50% ,assim ele cobre a metade direita da tela. */
+        left: 50%;
+        /* para o card não passar pela linha do tempo */
+        padding-left: 40px;
+    }
+
+    /* compensa metade da largura do ponto (18px / 2 = 9px), porém iria ficar descentralizado por conta borda, então (18 + 4(borda esquerda) + 4(borda direita)) = 26px, 26/2 = 13px
+       fazendo o ponto ficar centralizado em cima da linha. */
+
+    /* Desloca o pontinho do card da esquerda para a borda direita */
+    .filme-card.esquerda::after {
+        left: auto;
+        right: -13px;
+    }
+
+    /* Desloca o pontinho do card da direita para a borda esquerda */
+    .filme-card.direita::after {
+        left: -13px;
+    }
+
+    /* aumenta um pouco com transition e transform o card  */
+    .conteudo-filme {
+        transition: .5s all ease-out !important;
+    }
+
+    .conteudo-filme:hover {
+        transform: scale(1.1);
+    }
+
+    /* Ajustes finos de fontes trazidos para o desktop */
     .conteudo-filme h2 {
         font-size: 28px;
     }

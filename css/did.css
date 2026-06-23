@@ -1,3 +1,6 @@
+
+/* Introdução da seção did you know */
+
 .banner-galeria {
     background-image: url(../img/banner.webp);
     min-height: 300px;
@@ -49,6 +52,9 @@
     margin-right: 25px;
 }
 
+/* ----------- curiosidades --------- */
+
+/* largura 100%, elementos em coluna, e justify center */
 .curiosidade {
     background-color: rgb(12, 12, 12);
     padding: 20px;
@@ -88,23 +94,9 @@
     align-self: normal;
     margin: 20px;
     max-width: 900px;
+    flex:1;
 }
 
-/* conteudo da curiosidade */
-.conteudo-curiosidade {
-    display: flex;
-    align-items: center;
-    
-    gap: 30px;
-}
-
-.conteudo-curiosidade p {
-    color: white;
-    line-height: 100%;
-    margin: 20px;
-    max-width: 900px;
-    flex: 1;
-}
 
 /* ultilizando html semantico */
 
@@ -113,41 +105,47 @@
     align-self: flex-start; /* esquerda */
 }
 
+/* imagem em landscape, largura fixa e altura automatica */
 .curiosidade img {
     width: 300px;
     height: auto;
     display: block;
     padding: 2px;
-    border: 1px solid #6B8E23;
+    border: 1px solid #20221c;
     border-radius: 12px;
 }
 
+
+/* legenda da foto  */
 .curiosidade figcaption {
     color: #ccc;
     font-size: 0.73rem;
     margin-top: 8px;
     font-style: italic;
 }
+
+/* classe geral para mais de uma imagem , coloca o wrap para mobile*/
 .imgs{
     display: flex;
     flex-wrap: wrap;
 }
+
+/* imagem em retrato, largura automatica e altura fixa (200px)*/
 .imagem-retrato{
     width: auto !important;
     height: 200px !important;
     display: block;
 }
+/* desktop */
 @media (min-width: 700px){
-    .imgs{
-        display: flex;
+    /* aumenta a altura da imagem  */
+    .imagem-retrato{ 
+        height: 300px !important;
     }
-    .imagem-retrato{
-    width: auto !important;
-    height: 300px !important;
-    display: block;
-    }
+
+    /* aplica a transição para as imagems em desktop */
     .curiosidade img {
-    transition: .5s all ease-out;
+        transition: .5s all ease-out;
     }
     .curiosidade img:hover{
         transform: scale(1.2);

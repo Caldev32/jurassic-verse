@@ -220,7 +220,6 @@ body {
 /* flex-direction column, gap 8px */
 /* background color para padronizar */
 .dino-media {
-    background-color: #000000;
     width: 100%;
     height: 100%;
     margin: 0;
@@ -237,7 +236,9 @@ body {
 /* aspect-ratio 16/10 (formato widescreen) */
 /* object-fit contain para ter toda a imagem */
 /* border-radius 12px, borda 1px semi-transparente */
+/* background color para padronizar as imagens */
 .dino-img {
+    background-color: #000000;
     width: 100%;
     height: 100%;
     aspect-ratio: 16 / 10;
@@ -372,7 +373,7 @@ body {
 
 
     /* tbody em DESKTOP */
-    /* display: table-row-group */
+    /* display: table-row-group restaura o comportamento semântico de tabela */
     .tabela-dinossauros tbody {
         display: table-row-group;
     }
@@ -426,7 +427,7 @@ body {
 
 
     /* Labels ::before em DESKTOP - REMOVIDOS */
-    /* content: none - não mostra labels em desktop */
+    /* content: none - reverte o estilo para desktop*/
     .tabela-dinossauros tbody td::before {
         content: none;
     }
@@ -449,6 +450,7 @@ body {
     /* Imagem em DESKTOP */
     /* width: 180px (fixa), max-width: 100% */
     /* height: 110px (fixa), aspect-ratio: auto */
+    /* transição e transform no hover  */
     .dino-img {
         width: 180px;
         max-width: 100%;
@@ -458,10 +460,7 @@ body {
         transition: .4s all ease-out;
         background-color: #000000;
     }
-    /* .dino-media{
-        background-color: #000000;
-        border-radius: 12px;
-    } */
+   
     
     .dino-img:hover {
         transform: scale(1.5) translate(-20px);
