@@ -22,6 +22,7 @@
     margin-bottom: 20px;
 }
 
+/* Estiliza o títitulo "GALERIA" */
 .banner-galeria h1 {
     color: rgb(208, 195, 195);
     font-family: "Anton", sans-serif;
@@ -32,6 +33,7 @@
     text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.6);
 }
 
+/* Subtitulo*/
 #paragrafo-verde {
     color: #6B8E23;
     margin-bottom: 10px;
@@ -42,10 +44,9 @@
 
 
 /* Descrição principal da introdução */
-
 #descricao {
     color: white;
-    width: min(70vw, 900px);
+    width: min(70vw, 900px); /* Pode ocupar até 70vw, mas não passa de 900px*/
     font-size: 14px;
     line-height: 1.6;
     padding: 2px;
@@ -58,6 +59,13 @@
 /* TÍTULOS DAS SEÇÕES */
 /* ============================= */
 
+/*
+    - Dinossauros
+    - Veículos
+    - Locais
+    - Personagens
+*/
+
 h2 {
     color: rgb(206, 222, 223);
 
@@ -67,10 +75,11 @@ h2 {
     margin-top: 30px;
     margin-left: 20px;
 
-    display: flex;
+    display: flex; /* Permite alinhar 0 ícone/imagem junto do texto */
     align-items: center;
 }
 
+/* Padroniza os ícones e imagens dos títulos*/
 h2 img,
 h2 i {
     width: 45px;
@@ -85,7 +94,7 @@ h2 i {
 
 .card {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* Deixa imagem, titulo texto um embaixo do outro*/
 
     background-color: #000000;
 
@@ -93,28 +102,30 @@ h2 i {
     padding: 10px;
 
     border: 3px solid #6a8e237e;
-    border-radius: 12px;
+    border-radius: 12px; /* Bordas arredondadas*/
 
-    overflow: hidden;
+    overflow: hidden; /* evita a imagem passar para fora do card */
     box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.233);
     transition: .4s all ease-out;
 }
+
+/* Cria animação quando o usuário passa o mouse */
 .card:hover{
     transform: scale(1.2);
 }
 
+/* Altura fixa e object-fit cover para manter os cards visualmente padronizados*/
 .card img {
     width: 100%;
     height: auto;
 
-    object-fit: contain;
+    object-fit: contain; 
     display: block;
 
     border-radius: 12px;
-   
 }
 
-
+/* Titulos centralizados*/
 .card h3 {
     color: rgb(231, 225, 225);
 
@@ -125,6 +136,7 @@ h2 i {
     margin: 10px;
 }
 
+/* Descrição centralizada*/
 .card p {
     color: #6B8E23;
 
@@ -138,6 +150,7 @@ h2 i {
 /* RESPONSIVIDADE - GALERIA */
 /* ============================= */
 
+/* A partir de 700px, muda para layout desktop */
 @media (min-width: 700px) {
 
     #dinossauros,
@@ -145,10 +158,10 @@ h2 i {
     #locais,
     #personagens {
         display: flex;
-        flex-wrap: wrap;
-        justify-content: flex-start;
+        flex-wrap: wrap; /* permite quebrar linha*/
+        justify-content: flex-start; /* Começa da esquerda */
 
-        gap: 1.5rem;
+        gap: 1.5rem; /* Espaçamento entre os cards*/
 
         margin: 30px;
     }

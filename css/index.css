@@ -7,14 +7,13 @@
     width: 100vw;
     padding: 40px 25px;
 
-    /* Imagem principal da página */
-    background-image: url(../img/banner.webp);
-    background-size: cover;
-    background-position: center;
+    background-image: url(../img/banner.webp); /* Coloca imagem de fundo */
+    background-size: cover; /* Faz imagem cobrir todo o banner */
+    background-position: center; /* Centraliza a imagem */
 
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+    display: flex; /* Organiza os textos */
+    flex-direction: column; /* Textos um abaixo do outro */
+    justify-content: flex-end; /* texto na parte de baixo no banner mobile */
 }
 
 /* Texto "Bem-vindo ao" */
@@ -58,6 +57,7 @@
 
 .sobre-home {
     display: flex;
+    flex-direction: column;
     padding: 40px 10px;
 
     background-color: #121212;
@@ -148,10 +148,12 @@
 
     margin-bottom: 15px;
 }
+
 /* animação de hover  */
 .conteudo-home li{
     transition: .4s all ease-out;
 }
+
 .conteudo-home li:hover{
     transform: scale(1.2);
 }
@@ -218,6 +220,7 @@
     /* Layout lado a lado da seção Sobre */
     .sobre-home {
         display: flex;
+        flex-direction: row;
         justify-content: flex-start;
         align-items: center;
 

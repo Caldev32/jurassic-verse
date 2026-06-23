@@ -1,11 +1,13 @@
-/* Reset */
+/* ----- Reset ----- */
+/* - remove os espaçamentos padrões do navegador*/
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-/* Configurações gerais */
+/* ----- Configurações gerais ----- */
+/* - Define o fundo escuro e a fonte padrão*/
 html,
 body {
     min-height: 100vh;
@@ -13,12 +15,15 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Garante que o conteúdo principal ocupe pelo menos a altura da tela*/
 main {
     min-height: 100vh;
     background-color: #121212;
 }
 
-/* Header */
+/* ----- Header mobile ----- */
+/* - No header para telas pequenas, o header fica em coluna */
+/* - Logo Jurassic Verse em cima e botão do menu embaixo */
 header {
     display: flex;
     flex-direction: column;
@@ -26,6 +31,7 @@ header {
     background-color: black;
 }
 
+/* Logo tem tamanho fixo e aumenta ao passar o mouse: transform */
 header .logo {
     margin: 5px;
     width: 200px;
@@ -36,7 +42,8 @@ header .logo:hover {
     transform: scale(1.3);
 }
 
-/* Menu Mobile */
+/* ----- Ícone do Menu Mobile ----- */
+/* Ocupa a largura da tela no mobile */
 header i {
     background-color: #191818;
     color: #6B8E23;
@@ -52,25 +59,27 @@ header i {
 
 }
 
+/* Feedback visual quando passa o mouse */
 header i:hover {
     cursor: pointer;
     background-color: #182204;
     
 }
 
-/* Navegação */
+/* ----- Menu escondido no mobile ----- */
+/* - Menu começa escondido */
+/* - É exibido com JavaScript ao clicar no ícone */
 nav {
     display: none;
 }
 
 nav ul {
-    list-style: none;
+    list-style: none; /* Remove as bolinhas da lista*/
 }
 
-
+/* cada item do menu vira um container flex*/
 ul li{
     display: flex;
-
 }
 
 /* modificando o link dentro do li pois faz com que toda a caixa seja clicavel */
@@ -142,9 +151,11 @@ footer p {
     color: #666;
 }
 
-/* Desktop */
+/* ----- Desktop / Responsividade ----- */
+/* - A partir de 700px, o layout muda para desktop */
 @media (min-width: 700px) {
 
+    /* Logo fica a esquerda e menu a direita*/
     header {
         flex-direction: row;
         justify-content: space-between;
@@ -157,14 +168,17 @@ footer p {
         margin: 0;
     }
 
+    /* Esconde ícone hmaburguer no desktop */
     header i {
         display: none;
     }
 
+    /* Mostra o menu sempre no desktop */
     #menu {
         display: block !important;
     }
 
+    /* Coloca os links lado a lado*/
     #nav-bar {
         display: flex;
         align-items: center;
@@ -172,6 +186,7 @@ footer p {
         list-style: none;
     }
 
+    /* Links ficam mais simples*/
     .nav-item {
         width: auto;
         margin: 0;
@@ -180,9 +195,11 @@ footer p {
         background-color: transparent;
     }
 
+    /* feedback visual dos links*/
     .nav-item:hover {
-    background-color: transparent;
-    color: #6B8E23;
+        background-color: transparent;
+        color: #6B8E23;
+
     }
     .nav-item-selected {
         text-decoration: none;
