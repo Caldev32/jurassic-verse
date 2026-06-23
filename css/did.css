@@ -103,7 +103,6 @@
 .curiosidade figure {
     margin: 20px;
     align-self: flex-start; /* esquerda */
-    width: 75%;
 }
 
 /* imagem em landscape, largura fixa e altura automatica */
@@ -129,7 +128,6 @@
 .imgs{
     display: flex;
     flex-wrap: wrap;
-    
 }
 
 /* imagem em retrato, largura automatica e altura fixa (200px)*/
